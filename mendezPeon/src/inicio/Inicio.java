@@ -5,6 +5,9 @@
  */
 package inicio;
 
+import interfaz.VentanaInicio;
+import mendezPeon.Restaurante;
+
 /**
  *
  * @author bruno
@@ -15,7 +18,9 @@ public class Inicio {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Restaurante r = Restaurante.recuperar();
+        VentanaInicio ventana = new VentanaInicio(r);
+        ventana.setVisible(true);
     }
     
 }
