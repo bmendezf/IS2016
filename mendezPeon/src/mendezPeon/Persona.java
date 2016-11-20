@@ -14,11 +14,13 @@ public class Persona {
     private String nombre;
     private int telefono;
     private String mail;
-
+    private int ci;
+    
     public Persona() {
         this.nombre = "";
         this.telefono = 0;
         this.mail = "";
+        this.ci = 0;
     }
 
     public String getNombre() {
@@ -31,6 +33,14 @@ public class Persona {
 
     public int getTelefono() {
         return telefono;
+    }
+
+    public int getCi() {
+        return ci;
+    }
+
+    public void setCi(int ci) {
+        this.ci = ci;
     }
 
     public void setTelefono(int telefono) {
@@ -55,7 +65,44 @@ public class Persona {
         return c;
     }
 
-    public static boolean validarTelefono(String text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public static boolean validarTelefono(String tel) {
+        boolean correcto = false;
+        if (tel.equals("")) {
+            correcto = true;
+        } else {
+            if (tel.length() == 8 || tel.length() == 9) {
+                try {
+                    Integer.parseInt(tel);
+                    correcto =true;
+                } catch (NumberFormatException e) {
+                    correcto=false;
+                }
+            }
+        }
+        return correcto;
     }
+    
+        public static boolean verificarCI(String CI) {
+        boolean r = false;
+
+        if (!CI.equals("") && (CI.length() == 8 || CI.length() == 7)) {
+            if (CI.length() == 7) {
+                CI = "0" + CI;
+            }
+            int[] arrCoefs = {8, 1, 2, 3, 4, 7, 6};
+            int suma = 0;
+            for (int i = 0; i < arrCoefs.length; i++) {
+                int dig = CI.charAt(i) - 48;
+                suma += (arrCoefs[i] * dig);
+
+            }
+            int digCI = CI.charAt(7) - 48;
+            int digAlg = suma % 10;
+            if (digCI == digAlg) {
+                r = true;
+            }
+        }
+        return r;
+    }
+    
 }

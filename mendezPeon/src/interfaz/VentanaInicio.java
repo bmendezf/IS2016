@@ -5,6 +5,7 @@
  */
 package interfaz;
 
+import javax.swing.JOptionPane;
 import mendezPeon.Evaluacion;
 import mendezPeon.Persona;
 import mendezPeon.Restaurante;
@@ -59,6 +60,9 @@ public class VentanaInicio extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         opcionesEmpleado = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -160,35 +164,49 @@ public class VentanaInicio extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(255, 0, 0));
         jLabel13.setText("* El telefono ingresado no es correcto");
 
+        jLabel14.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel14.setText("* La CI ingresada no es correcta");
+
+        jLabel15.setText("CI:");
+
         javax.swing.GroupLayout evaluacionLayout = new javax.swing.GroupLayout(evaluacion);
         evaluacion.setLayout(evaluacionLayout);
         evaluacionLayout.setHorizontalGroup(
             evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, evaluacionLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(128, 128, 128))
             .addGroup(evaluacionLayout.createSequentialGroup()
                 .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton5)
                     .addGroup(evaluacionLayout.createSequentialGroup()
                         .addGap(94, 94, 94)
                         .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11))
-                        .addGap(37, 37, 37)
-                        .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comboEstrellas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane1)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
-                            .addComponent(jTextField8))))
-                .addGap(44, 168, Short.MAX_VALUE))
+                            .addGroup(evaluacionLayout.createSequentialGroup()
+                                .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel10))
+                                .addGap(37, 37, 37)
+                                .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextField9, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(comboEstrellas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
+                                    .addComponent(jTextField8)))
+                            .addGroup(evaluacionLayout.createSequentialGroup()
+                                .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel11))
+                                .addGap(39, 39, 39)
+                                .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
+                                    .addComponent(jTextField10))))))
+                .addGap(49, 168, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, evaluacionLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96))
         );
         evaluacionLayout.setVerticalGroup(
             evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -213,13 +231,23 @@ public class VentanaInicio extends javax.swing.JFrame {
                 .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(comboEstrellas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
-                .addGap(18, 18, 18)
                 .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                    .addGroup(evaluacionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34))
+                    .addGroup(evaluacionLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel15)
+                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
+                .addGap(19, 19, 19)
                 .addComponent(jButton5))
         );
 
@@ -428,21 +456,25 @@ public class VentanaInicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField5ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        Evaluacion evaluacion = new Evaluacion();
-        evaluacion.getPersona().setNombre(jTextField7.getText());
-        if (Persona.validarTelefono(jTextField8.getText())){
+        boolean telCorrecto = Persona.validarTelefono(jTextField8.getText());
+        boolean correoCorrecto = Persona.verificarCorreo(jTextField9.getText());
+        boolean ciCorrecta = Persona.verificarCI(jTextField10.getText());
+        if (telCorrecto && correoCorrecto && ciCorrecta) {
+            Evaluacion evaluacion = new Evaluacion();
+            evaluacion.getPersona().setNombre(jTextField7.getText());
             evaluacion.getPersona().setTelefono(Integer.parseInt(jTextField8.getText()));
-            jLabel12.setVisible(false);
-        }else{
-            jLabel12.setVisible(true);
-        }
-        if (Persona.verificarCorreo(jTextField9.getText())) {
             evaluacion.getPersona().setMail(jTextField9.getText());
-            jLabel13.setVisible(false);
-        }else{
-            jLabel13.setVisible(true);
+            evaluacion.getPersona().setCi(Integer.parseInt(jTextField10.getText()));
+            evaluacion.setEstrellas(comboEstrellas.getSelectedIndex() + 1);
+            evaluacion.setResenia(jTextArea1.getText());
+            this.esconder();
+            inicio.setVisible(true);
+            JOptionPane.showMessageDialog(this, "Ingresado correctamente.");
+        } else {
+            jLabel12.setVisible(!correoCorrecto);
+            jLabel12.setVisible(!telCorrecto);
+            jLabel14.setVisible(!ciCorrecta);
         }
-        
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void comboEstrellasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboEstrellasActionPerformed
@@ -463,7 +495,7 @@ public class VentanaInicio extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         this.esconder();
         inicio.setVisible(true);
-         
+
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -496,6 +528,8 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -507,6 +541,7 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
@@ -534,5 +569,7 @@ public class VentanaInicio extends javax.swing.JFrame {
         jTextField9.setText("");
         jLabel12.setVisible(false);
         jTextArea1.setText("");
+        jTextField10.setText("");
+        jLabel14.setVisible(false);
     }
 }
