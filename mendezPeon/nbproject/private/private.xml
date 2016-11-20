@@ -3,8 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Zesu/Documents/GitHub/IS2016/mendezPeon/src/interfaz/VentanaInicio.java</file>
             <file>file:/C:/Users/Zesu/Documents/GitHub/IS2016/mendezPeon/src/inicio/Inicio.java</file>
+=======
+            <file>file:/C:/Users/bruno/OneDrive/Documentos/GitHub/IS2016/mendezPeon/src/mendezPeon/Persona.java</file>
+            <file>file:/C:/Users/bruno/OneDrive/Documentos/GitHub/IS2016/mendezPeon/src/mendezPeon/Restaurante.java</file>
+            <file>file:/C:/Users/bruno/OneDrive/Documentos/GitHub/IS2016/mendezPeon/src/interfaz/VentanaInicio.java</file>
+            <file>file:/C:/Users/bruno/OneDrive/Documentos/GitHub/IS2016/mendezPeon/src/inicio/Inicio.java</file>
+>>>>>>> origin/master
         </group>
     </open-files>
 </project-private>
