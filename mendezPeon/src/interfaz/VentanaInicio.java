@@ -5,6 +5,7 @@
  */
 package interfaz;
 
+import java.awt.Color;
 import mendezPeon.Evaluacion;
 import mendezPeon.Persona;
 import mendezPeon.Restaurante;
@@ -29,6 +30,7 @@ public class VentanaInicio extends javax.swing.JFrame {
         for (int i = 1; i <= 5; i++) {
             comboEstrellas.addItem(i);
         }
+        this.setSize(800, 600);    
     }
 
     /**
@@ -43,6 +45,7 @@ public class VentanaInicio extends javax.swing.JFrame {
         inicio = new javax.swing.JPanel();
         cliente = new javax.swing.JButton();
         empleado = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
         evaluacion = new javax.swing.JPanel();
         jButton5 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
@@ -62,7 +65,8 @@ public class VentanaInicio extends javax.swing.JFrame {
         opcionesEmpleado = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
         editarRestaurante = new javax.swing.JPanel();
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -84,12 +88,16 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        inicio.setLayout(null);
+
         cliente.setText("Cliente");
         cliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clienteActionPerformed(evt);
             }
         });
+        inicio.add(cliente);
+        cliente.setBounds(430, 310, 110, 60);
 
         empleado.setText("Empleado");
         empleado.addActionListener(new java.awt.event.ActionListener() {
@@ -97,27 +105,15 @@ public class VentanaInicio extends javax.swing.JFrame {
                 empleadoActionPerformed(evt);
             }
         });
+        inicio.add(empleado);
+        empleado.setBounds(220, 310, 110, 60);
 
-        javax.swing.GroupLayout inicioLayout = new javax.swing.GroupLayout(inicio);
-        inicio.setLayout(inicioLayout);
-        inicioLayout.setHorizontalGroup(
-            inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(inicioLayout.createSequentialGroup()
-                .addGap(149, 149, 149)
-                .addComponent(cliente)
-                .addGap(83, 83, 83)
-                .addComponent(empleado)
-                .addContainerGap(194, Short.MAX_VALUE))
-        );
-        inicioLayout.setVerticalGroup(
-            inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(inicioLayout.createSequentialGroup()
-                .addGap(150, 150, 150)
-                .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cliente)
-                    .addComponent(empleado))
-                .addContainerGap(220, Short.MAX_VALUE))
-        );
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/1.jpg"))); // NOI18N
+        jLabel15.setText("jLabel15");
+        inicio.add(jLabel15);
+        jLabel15.setBounds(0, 0, 800, 600);
+
+        evaluacion.setBackground(new java.awt.Color(219, 182, 173));
 
         jButton5.setText("volver");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +184,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                             .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
                             .addComponent(jTextField8))))
-                .addGap(44, 168, Short.MAX_VALUE))
+                .addGap(44, 362, Short.MAX_VALUE))
         );
         evaluacionLayout.setVerticalGroup(
             evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -217,47 +213,37 @@ public class VentanaInicio extends javax.swing.JFrame {
                 .addGroup(evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
                 .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(jButton5))
         );
 
+        opcionesEmpleado.setBackground(new java.awt.Color(219, 182, 173));
+        opcionesEmpleado.setLayout(null);
+
         jButton1.setText("Editar restaurante");
+        opcionesEmpleado.add(jButton1);
+        jButton1.setBounds(220, 310, 140, 60);
 
         jButton2.setText("Sortear");
+        opcionesEmpleado.add(jButton2);
+        jButton2.setBounds(430, 310, 110, 60);
 
-        jButton3.setText("volver");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButton10.setText("volver");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButton10ActionPerformed(evt);
             }
         });
+        opcionesEmpleado.add(jButton10);
+        jButton10.setBounds(0, 540, 63, 23);
 
-        javax.swing.GroupLayout opcionesEmpleadoLayout = new javax.swing.GroupLayout(opcionesEmpleado);
-        opcionesEmpleado.setLayout(opcionesEmpleadoLayout);
-        opcionesEmpleadoLayout.setHorizontalGroup(
-            opcionesEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(opcionesEmpleadoLayout.createSequentialGroup()
-                .addGap(112, 112, 112)
-                .addComponent(jButton1)
-                .addGap(101, 101, 101)
-                .addComponent(jButton2)
-                .addContainerGap(167, Short.MAX_VALUE))
-            .addGroup(opcionesEmpleadoLayout.createSequentialGroup()
-                .addComponent(jButton3)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        opcionesEmpleadoLayout.setVerticalGroup(
-            opcionesEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(opcionesEmpleadoLayout.createSequentialGroup()
-                .addGap(155, 155, 155)
-                .addGroup(opcionesEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
-                .addComponent(jButton3))
-        );
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/1.jpg"))); // NOI18N
+        opcionesEmpleado.add(jLabel14);
+        jLabel14.setBounds(0, -10, 830, 620);
+
+        editarRestaurante.setBackground(new java.awt.Color(219, 182, 173));
 
         jButton6.setText("volver");
 
@@ -300,7 +286,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                             .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(344, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editarRestauranteLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -327,9 +313,11 @@ public class VentanaInicio extends javax.swing.JFrame {
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(82, 82, 82)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 280, Short.MAX_VALUE)
                 .addComponent(jButton6))
         );
+
+        sortear.setBackground(new java.awt.Color(219, 182, 173));
 
         jButton7.setText("volver");
 
@@ -366,7 +354,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                         .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(104, Short.MAX_VALUE))
+                .addContainerGap(334, Short.MAX_VALUE))
         );
         sortearLayout.setVerticalGroup(
             sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -381,7 +369,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(110, 110, 110)
                 .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 306, Short.MAX_VALUE)
                 .addComponent(jButton7))
         );
 
@@ -389,9 +377,11 @@ public class VentanaInicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+            .addGap(0, 800, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(inicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createSequentialGroup()
+                    .addComponent(inicio, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(evaluacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -403,9 +393,11 @@ public class VentanaInicio extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 393, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(inicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createSequentialGroup()
+                    .addComponent(inicio, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(evaluacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -466,10 +458,10 @@ public class VentanaInicio extends javax.swing.JFrame {
          
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         this.esconder();
         inicio.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -483,8 +475,8 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JPanel evaluacion;
     private javax.swing.JPanel inicio;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -496,6 +488,8 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
