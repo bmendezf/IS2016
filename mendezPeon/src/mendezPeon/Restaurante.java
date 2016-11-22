@@ -5,12 +5,14 @@
  */
 package mendezPeon;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-/**
- *
- * @author bruno
- */
 public class Restaurante {
 
     private String nombre;
@@ -18,6 +20,7 @@ public class Restaurante {
     private String horario;
     private String tipoComida;
     private ArrayList<Evaluacion> evaluaciones;
+    private ArrayList<Sorteo> sorteos;
 
     public Restaurante() {
         this.nombre = "";
@@ -25,6 +28,15 @@ public class Restaurante {
         this.horario = "";
         this.tipoComida = "";
         this.evaluaciones = new ArrayList();
+        this.sorteos = new ArrayList();
+    }
+
+    public ArrayList<Sorteo> getSorteos() {
+        return sorteos;
+    }
+
+    public void setSorteos(ArrayList<Sorteo> sorteos) {
+        this.sorteos = sorteos;
     }
 
     public String getNombre() {
@@ -68,7 +80,33 @@ public class Restaurante {
     }
 
     public static Restaurante recuperar() {
-        return new Restaurante();
+        FileInputStream file = null;
+        Restaurante r = new Restaurante();
+        try {
+            file = new FileInputStream("datos.txt");
+            ObjectInputStream input = new ObjectInputStream(file);
+
+            if (input != null) {
+                try {
+                    r = (Restaurante) input.readObject();
+                    input.close();
+                } catch (Exception e) {
+                    r = new Restaurante();
+                }
+            }
+
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Restaurante.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(Restaurante.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                file.close();
+            } catch (IOException ex) {
+                Logger.getLogger(Restaurante.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return r;
     }
 
 }

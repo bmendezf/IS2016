@@ -15,7 +15,7 @@ public class Persona {
     private int telefono;
     private String mail;
     private int ci;
-    
+
     public Persona() {
         this.nombre = "";
         this.telefono = 0;
@@ -73,36 +73,26 @@ public class Persona {
             if (tel.length() == 8 || tel.length() == 9) {
                 try {
                     Integer.parseInt(tel);
-                    correcto =true;
+                    correcto = true;
                 } catch (NumberFormatException e) {
-                    correcto=false;
+                    correcto = false;
                 }
             }
         }
         return correcto;
     }
-    
-        public static boolean verificarCI(String CI) {
+
+    public static boolean verificarCI(String CI) {
         boolean r = false;
-
-        if (!CI.equals("") && (CI.length() == 8 || CI.length() == 7)) {
-            if (CI.length() == 7) {
-                CI = "0" + CI;
-            }
-            int[] arrCoefs = {8, 1, 2, 3, 4, 7, 6};
-            int suma = 0;
-            for (int i = 0; i < arrCoefs.length; i++) {
-                int dig = CI.charAt(i) - 48;
-                suma += (arrCoefs[i] * dig);
-
-            }
-            int digCI = CI.charAt(7) - 48;
-            int digAlg = suma % 10;
-            if (digCI == digAlg) {
+        if ((CI.length() == 8 || CI.length() == 7)) {
+            try {
+                Integer.parseInt(CI);
                 r = true;
+            } catch (NumberFormatException e) {
+                r = false;
             }
         }
         return r;
     }
-    
+
 }
