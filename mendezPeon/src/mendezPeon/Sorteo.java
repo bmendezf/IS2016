@@ -5,13 +5,14 @@
  */
 package mendezPeon;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author bruno
  */
-public class Sorteo {
+public class Sorteo  implements Serializable{
     private String premio;
     private int cantidadGanadores;
     private ArrayList<Persona> ganadores;

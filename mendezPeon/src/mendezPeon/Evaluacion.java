@@ -5,11 +5,13 @@
  */
 package mendezPeon;
 
+import java.io.Serializable;
+
 /**
  *
  * @author bruno
  */
-public class Evaluacion {
+public class Evaluacion implements Serializable{
     private Persona persona;
     private int estrellas;
     private String resenia;

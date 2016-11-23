@@ -7,13 +7,16 @@ package mendezPeon;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Restaurante {
+public class Restaurante  implements Serializable{
 
     private String nombre;
     private String direccion;
@@ -94,7 +97,27 @@ public class Restaurante {
                     r = new Restaurante();
                 }
             }
+            file.close();
+        } catch (FileNotFoundException ex) {
+            r = new Restaurante();
+        } catch (IOException ex) {
+            r = new Restaurante();
 
+        }
+        return r;
+    }
+
+    public void guardar() {
+        
+        
+        FileOutputStream file = null;
+        try {
+            file = new FileOutputStream("datos.txt");
+            ObjectOutputStream output = new ObjectOutputStream(file);
+            if (output != null) {
+                output.writeObject(this);
+                output.close();
+            }
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Restaurante.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -106,7 +129,5 @@ public class Restaurante {
                 Logger.getLogger(Restaurante.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        return r;
     }
-
 }

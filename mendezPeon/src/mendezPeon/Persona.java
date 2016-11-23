@@ -5,11 +5,13 @@
  */
 package mendezPeon;
 
+import java.io.Serializable;
+
 /**
  *
  * @author bruno
  */
-public class Persona {
+public class Persona  implements Serializable{
 
     private String nombre;
     private int telefono;
