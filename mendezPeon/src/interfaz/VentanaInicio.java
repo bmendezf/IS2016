@@ -12,10 +12,10 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.YES_NO_OPTION;
 import javax.swing.table.DefaultTableModel;
-import mendezPeon.Evaluacion;
-import mendezPeon.Persona;
-import mendezPeon.Restaurante;
-import mendezPeon.Sorteo;
+import dominio.Evaluacion;
+import dominio.Persona;
+import dominio.Restaurante;
+import dominio.Sorteo;
 
 /**
  *
@@ -37,7 +37,7 @@ public class VentanaInicio extends javax.swing.JFrame {
         this.setSize(805, 630);
         this.setResizable(false);
         cantidadEstrellas = 0;
-
+        this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
 
@@ -146,22 +146,12 @@ public class VentanaInicio extends javax.swing.JFrame {
         jButton28 = new javax.swing.JButton();
         verSorteo = new javax.swing.JPanel();
         jButton29 = new javax.swing.JButton();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jButton30 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
-        jButton33 = new javax.swing.JButton();
-        jButton34 = new javax.swing.JButton();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.OverlayLayout(getContentPane()));
@@ -979,17 +969,17 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
             },
             new String [] {
-                "nombre", "estrellas", "correo", "telefono"
+                "cantidad de ganadores", "premio"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, true, true
+                false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -1053,152 +1043,17 @@ public class VentanaInicio extends javax.swing.JFrame {
             }
         });
 
-        jLabel30.setText("Estrellas:");
+        jLabel33.setText("Cantidad de ganadores:");
 
-        jLabel31.setText("Reseña:");
+        jLabel34.setText("Premio:");
 
-        jLabel32.setText("CI:");
-
-        jButton30.setBackground(new java.awt.Color(219, 182, 173));
-        jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton30.setBorderPainted(false);
-        jButton30.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton30FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton30FocusLost(evt);
-            }
-        });
-        jButton30.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton30MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton30MouseExited(evt);
-            }
-        });
-        jButton30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton30ActionPerformed(evt);
-            }
-        });
-
-        jButton31.setBackground(new java.awt.Color(219, 182, 173));
-        jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton31.setBorderPainted(false);
-        jButton31.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton31FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton31FocusLost(evt);
-            }
-        });
-        jButton31.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton31MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton31MouseExited(evt);
-            }
-        });
-        jButton31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton31ActionPerformed(evt);
-            }
-        });
-
-        jButton32.setBackground(new java.awt.Color(219, 182, 173));
-        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton32.setBorderPainted(false);
-        jButton32.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton32FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton32FocusLost(evt);
-            }
-        });
-        jButton32.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton32MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton32MouseExited(evt);
-            }
-        });
-        jButton32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton32ActionPerformed(evt);
-            }
-        });
-
-        jButton33.setBackground(new java.awt.Color(219, 182, 173));
-        jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton33.setBorderPainted(false);
-        jButton33.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton33FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton33FocusLost(evt);
-            }
-        });
-        jButton33.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton33MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton33MouseExited(evt);
-            }
-        });
-        jButton33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton33ActionPerformed(evt);
-            }
-        });
-
-        jButton34.setBackground(new java.awt.Color(219, 182, 173));
-        jButton34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton34.setBorderPainted(false);
-        jButton34.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton34FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton34FocusLost(evt);
-            }
-        });
-        jButton34.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton34MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton34MouseExited(evt);
-            }
-        });
-        jButton34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton34ActionPerformed(evt);
-            }
-        });
-
-        jLabel33.setText("Nombre:");
-
-        jLabel34.setText("Telefono:");
-
-        jLabel35.setText("Correo:");
+        jLabel35.setText("Ganadores:");
 
         jLabel36.setText("jLabel25");
 
         jLabel37.setText("jLabel25");
 
         jLabel38.setText("jLabel25");
-
-        jLabel39.setText("jLabel25");
-
-        jLabel40.setText("jLabel25");
 
         javax.swing.GroupLayout verSorteoLayout = new javax.swing.GroupLayout(verSorteo);
         verSorteo.setLayout(verSorteoLayout);
@@ -1208,37 +1063,22 @@ public class VentanaInicio extends javax.swing.JFrame {
                 .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 730, Short.MAX_VALUE))
             .addGroup(verSorteoLayout.createSequentialGroup()
-                .addGap(203, 203, 203)
+                .addGap(194, 194, 194)
                 .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel33)
-                    .addComponent(jLabel30)
                     .addComponent(jLabel34)
-                    .addComponent(jLabel35)
-                    .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel31))
-                .addGap(33, 33, 33)
+                    .addComponent(jLabel35))
+                .addGap(34, 34, 34)
                 .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel40)
-                    .addComponent(jLabel39)
                     .addComponent(jLabel38)
                     .addComponent(jLabel37)
-                    .addGroup(verSorteoLayout.createSequentialGroup()
-                        .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel36))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         verSorteoLayout.setVerticalGroup(
             verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(verSorteoLayout.createSequentialGroup()
-                .addGap(95, 95, 95)
+                .addGap(107, 107, 107)
                 .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
                     .addComponent(jLabel36))
@@ -1250,23 +1090,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                 .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel35)
                     .addComponent(jLabel38))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel32)
-                    .addComponent(jLabel39))
-                .addGap(21, 21, 21)
-                .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel31)
-                    .addComponent(jLabel40))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 295, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 382, Short.MAX_VALUE)
                 .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -1296,11 +1120,15 @@ public class VentanaInicio extends javax.swing.JFrame {
         if (telCorrecto && correoCorrecto && ciCorrecta) {
             Evaluacion evaluacion = new Evaluacion();
             evaluacion.getPersona().setNombre(jTextField7.getText());
-            evaluacion.getPersona().setTelefono(Integer.parseInt(jTextField8.getText()));
+            if (jTextField8.getText().equals("")) {
+                evaluacion.getPersona().setTelefono(0);
+            } else {
+                evaluacion.getPersona().setTelefono(Integer.parseInt(jTextField8.getText()));
+            }
             evaluacion.getPersona().setMail(jTextField9.getText());
             evaluacion.getPersona().setCi(Integer.parseInt(jTextField10.getText()));
-            if (cantidadEstrellas==0) {
-                cantidadEstrellas=1;
+            if (cantidadEstrellas == 0) {
+                cantidadEstrellas = 1;
             }
             evaluacion.setEstrellas(cantidadEstrellas);
             evaluacion.setResenia(jTextArea1.getText());
@@ -1500,13 +1328,16 @@ public class VentanaInicio extends javax.swing.JFrame {
                 //Anuncio ganadores
                 s.setCantidadGanadores(totalGanadores);
                 s.setPremio(jTextField6.getText());
-                String text = "Los ganadores son: /n";
+
+                String text = "<html><body>Los ganadores son: <br>";
                 for (int i = 0; i < ganadores.size(); i++) {
-                    text += ganadores.get(i).getNombre() + "/n";
+                    text += ganadores.get(i).getNombre() + "<br>";
                     s.addGanador(ganadores.get(i));
                 }
+                text += "</body></html>";
                 jLabel18.setText(text);
-
+                JOptionPane.showMessageDialog(this, "Se le ha enviado un email a los ganadores del sorteo");
+                restaurante.getSorteos().add(s);
             }
 
         }
@@ -1515,6 +1346,8 @@ public class VentanaInicio extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.esconder();
         sortear.setVisible(true);
+        jTextField5.setText("");
+        jTextField6.setText("");
         jLabel18.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -1540,7 +1373,13 @@ public class VentanaInicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
+        if (!restaurante.getSorteos().isEmpty()) {
+            this.inicializarSorteos();
+            this.esconder();
+            sorteos.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "No se han encontrado sorteos");
+        }
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
@@ -1566,7 +1405,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                 this.inicializarEvaluaciones();
             }
         } else {
-            JOptionPane.showMessageDialog(null, "Seleccione un técnico.");
+            JOptionPane.showMessageDialog(null, "Seleccione una evaluacion.");
         }
     }//GEN-LAST:event_jButton20ActionPerformed
 
@@ -1681,125 +1520,50 @@ public class VentanaInicio extends javax.swing.JFrame {
             jLabel29.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getResenia());
             this.cargarEstrellasResenia(restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getEstrellas());
         } else {
-            JOptionPane.showMessageDialog(null, "Seleccione un técnico.");
+            JOptionPane.showMessageDialog(null, "Seleccione una evaluacion.");
         }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
+        this.esconder();
+        opcionesEmpleado.setVisible(true);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
+        if (jTable2.getSelectedRow() != -1) {
+            this.esconder();
+            verSorteo.setVisible(true);
+            jLabel36.setText("" + restaurante.getSorteos().get(jTable2.getSelectedRow()).getCantidadGanadores());
+            jLabel37.setText(restaurante.getSorteos().get(jTable2.getSelectedRow()).getPremio());
+            String text = "<html><body>";
+            for (int i = 0; i < restaurante.getSorteos().get(jTable2.getSelectedRow()).getGanadores().size(); i++) {
+                text += restaurante.getSorteos().get(jTable2.getSelectedRow()).getGanadores().get(i).getNombre() + "<br>";
+            }
+            text += "</body></html>";
+            jLabel38.setText(text);
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleccione un sorteo.");
+        }
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
+        if (jTable2.getSelectedRow() != -1) {
+            int i = JOptionPane.showConfirmDialog(null, "Desea eliminar este sorteo?", null, YES_NO_OPTION);
+            if (i == 0) {
+                restaurante.getSorteos().remove(jTable2.getSelectedRow());
+                this.inicializarSorteos();
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleccione un sorteo.");
+        }
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
+        this.esconder();
+        this.inicializarSorteos();
+        sorteos.setVisible(true);
     }//GEN-LAST:event_jButton29ActionPerformed
-
-    private void jButton30FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton30FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30FocusGained
-
-    private void jButton30FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton30FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30FocusLost
-
-    private void jButton30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton30MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30MouseEntered
-
-    private void jButton30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton30MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30MouseExited
-
-    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30ActionPerformed
-
-    private void jButton31FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton31FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton31FocusGained
-
-    private void jButton31FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton31FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton31FocusLost
-
-    private void jButton31MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton31MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton31MouseEntered
-
-    private void jButton31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton31MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton31MouseExited
-
-    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton31ActionPerformed
-
-    private void jButton32FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton32FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton32FocusGained
-
-    private void jButton32FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton32FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton32FocusLost
-
-    private void jButton32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton32MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton32MouseEntered
-
-    private void jButton32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton32MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton32MouseExited
-
-    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton32ActionPerformed
-
-    private void jButton33FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton33FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton33FocusGained
-
-    private void jButton33FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton33FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton33FocusLost
-
-    private void jButton33MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton33MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton33MouseEntered
-
-    private void jButton33MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton33MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton33MouseExited
-
-    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton33ActionPerformed
-
-    private void jButton34FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton34FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton34FocusGained
-
-    private void jButton34FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton34FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton34FocusLost
-
-    private void jButton34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton34MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton34MouseEntered
-
-    private void jButton34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton34MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton34MouseExited
-
-    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton34ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1835,11 +1599,6 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
-    private javax.swing.JButton jButton33;
-    private javax.swing.JButton jButton34;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -1869,18 +1628,13 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1931,7 +1685,6 @@ public class VentanaInicio extends javax.swing.JFrame {
         jTextField10.setText("");
         jLabel14.setVisible(false);
     }
-
 
     private void clickBoton(int nroBoton) {
 
@@ -2052,6 +1805,22 @@ public class VentanaInicio extends javax.swing.JFrame {
                 jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
                 break;
         }
+    }
+
+    private void inicializarSorteos() {
+        ArrayList<Sorteo> lista = restaurante.getSorteos();
+        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+        while (model.getRowCount() != 0) {
+            model.removeRow(0);
+        }
+        for (int i = 0; i < lista.size(); i++) {
+            String[] aux = new String[2];
+            aux[0] = "" + lista.get(i).getCantidadGanadores();
+            aux[1] = "" + lista.get(i).getPremio();
+            model.addRow((Object[]) aux);
+        }
+        jTable2.setVisible(true);
+        jTable2.setModel(model);
     }
 
 }
