@@ -5,17 +5,21 @@
  */
 package interfaz;
 
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Random;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.YES_NO_OPTION;
 import javax.swing.table.DefaultTableModel;
-import dominio.Evaluacion;
-import dominio.Persona;
-import dominio.Restaurante;
-import dominio.Sorteo;
+import mendezPeon.Evaluacion;
+import mendezPeon.Persona;
+import mendezPeon.Restaurante;
+import mendezPeon.Sorteo;
 
 /**
  *
@@ -37,18 +41,6 @@ public class VentanaInicio extends javax.swing.JFrame {
         this.setSize(805, 630);
         this.setResizable(false);
         cantidadEstrellas = 0;
-        this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        this.addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-
-                restaurante.guardar();
-
-                int i = JOptionPane.showConfirmDialog(null, "Desea finalizar el programa?", null, YES_NO_OPTION);
-                if (i == 0) {
-                    System.exit(0);//cierra aplicacion
-                }
-            }
-        });
 
     }
 
@@ -138,20 +130,6 @@ public class VentanaInicio extends javax.swing.JFrame {
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        sorteos = new javax.swing.JPanel();
-        jButton21 = new javax.swing.JButton();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jButton22 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        verSorteo = new javax.swing.JPanel();
-        jButton29 = new javax.swing.JButton();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.OverlayLayout(getContentPane()));
@@ -958,144 +936,6 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         getContentPane().add(verEvaluacion);
 
-        sorteos.setBackground(new java.awt.Color(219, 182, 173));
-
-        jButton21.setText("volver");
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
-            }
-        });
-
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
-            },
-            new String [] {
-                "cantidad de ganadores", "premio"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jScrollPane3.setViewportView(jTable2);
-
-        jButton22.setText("ver");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
-            }
-        });
-
-        jButton28.setText("eliminar");
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout sorteosLayout = new javax.swing.GroupLayout(sorteos);
-        sorteos.setLayout(sorteosLayout);
-        sorteosLayout.setHorizontalGroup(
-            sorteosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sorteosLayout.createSequentialGroup()
-                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 730, Short.MAX_VALUE))
-            .addGroup(sorteosLayout.createSequentialGroup()
-                .addGap(72, 72, 72)
-                .addGroup(sorteosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(sorteosLayout.createSequentialGroup()
-                        .addComponent(jButton28)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton22))
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        sorteosLayout.setVerticalGroup(
-            sorteosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sorteosLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 441, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(sorteosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton22)
-                    .addComponent(jButton28))
-                .addGap(34, 34, 34)
-                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        getContentPane().add(sorteos);
-
-        verSorteo.setBackground(new java.awt.Color(219, 182, 173));
-
-        jButton29.setText("volver");
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
-            }
-        });
-
-        jLabel33.setText("Cantidad de ganadores:");
-
-        jLabel34.setText("Premio:");
-
-        jLabel35.setText("Ganadores:");
-
-        jLabel36.setText("jLabel25");
-
-        jLabel37.setText("jLabel25");
-
-        jLabel38.setText("jLabel25");
-
-        javax.swing.GroupLayout verSorteoLayout = new javax.swing.GroupLayout(verSorteo);
-        verSorteo.setLayout(verSorteoLayout);
-        verSorteoLayout.setHorizontalGroup(
-            verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(verSorteoLayout.createSequentialGroup()
-                .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 730, Short.MAX_VALUE))
-            .addGroup(verSorteoLayout.createSequentialGroup()
-                .addGap(194, 194, 194)
-                .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel33)
-                    .addComponent(jLabel34)
-                    .addComponent(jLabel35))
-                .addGap(34, 34, 34)
-                .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel38)
-                    .addComponent(jLabel37)
-                    .addComponent(jLabel36))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        verSorteoLayout.setVerticalGroup(
-            verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(verSorteoLayout.createSequentialGroup()
-                .addGap(107, 107, 107)
-                .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel33)
-                    .addComponent(jLabel36))
-                .addGap(18, 18, 18)
-                .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel34)
-                    .addComponent(jLabel37))
-                .addGap(18, 18, 18)
-                .addGroup(verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel35)
-                    .addComponent(jLabel38))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 382, Short.MAX_VALUE)
-                .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        getContentPane().add(verSorteo);
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1120,16 +960,9 @@ public class VentanaInicio extends javax.swing.JFrame {
         if (telCorrecto && correoCorrecto && ciCorrecta) {
             Evaluacion evaluacion = new Evaluacion();
             evaluacion.getPersona().setNombre(jTextField7.getText());
-            if (jTextField8.getText().equals("")) {
-                evaluacion.getPersona().setTelefono(0);
-            } else {
-                evaluacion.getPersona().setTelefono(Integer.parseInt(jTextField8.getText()));
-            }
+            evaluacion.getPersona().setTelefono(Integer.parseInt(jTextField8.getText()));
             evaluacion.getPersona().setMail(jTextField9.getText());
             evaluacion.getPersona().setCi(Integer.parseInt(jTextField10.getText()));
-            if (cantidadEstrellas == 0) {
-                cantidadEstrellas = 1;
-            }
             evaluacion.setEstrellas(cantidadEstrellas);
             evaluacion.setResenia(jTextArea1.getText());
             restaurante.getEvaluaciones().add(evaluacion);
@@ -1328,16 +1161,13 @@ public class VentanaInicio extends javax.swing.JFrame {
                 //Anuncio ganadores
                 s.setCantidadGanadores(totalGanadores);
                 s.setPremio(jTextField6.getText());
-
-                String text = "<html><body>Los ganadores son: <br>";
+                String text = "Los ganadores son: /n";
                 for (int i = 0; i < ganadores.size(); i++) {
-                    text += ganadores.get(i).getNombre() + "<br>";
+                    text += ganadores.get(i).getNombre() + "/n";
                     s.addGanador(ganadores.get(i));
                 }
-                text += "</body></html>";
                 jLabel18.setText(text);
-                JOptionPane.showMessageDialog(this, "Se le ha enviado un email a los ganadores del sorteo");
-                restaurante.getSorteos().add(s);
+
             }
 
         }
@@ -1346,8 +1176,6 @@ public class VentanaInicio extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.esconder();
         sortear.setVisible(true);
-        jTextField5.setText("");
-        jTextField6.setText("");
         jLabel18.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -1373,13 +1201,7 @@ public class VentanaInicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        if (!restaurante.getSorteos().isEmpty()) {
-            this.inicializarSorteos();
-            this.esconder();
-            sorteos.setVisible(true);
-        } else {
-            JOptionPane.showMessageDialog(null, "No se han encontrado sorteos");
-        }
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
@@ -1405,7 +1227,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                 this.inicializarEvaluaciones();
             }
         } else {
-            JOptionPane.showMessageDialog(null, "Seleccione una evaluacion.");
+            JOptionPane.showMessageDialog(null, "Seleccione un técnico.");
         }
     }//GEN-LAST:event_jButton20ActionPerformed
 
@@ -1520,50 +1342,9 @@ public class VentanaInicio extends javax.swing.JFrame {
             jLabel29.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getResenia());
             this.cargarEstrellasResenia(restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getEstrellas());
         } else {
-            JOptionPane.showMessageDialog(null, "Seleccione una evaluacion.");
+            JOptionPane.showMessageDialog(null, "Seleccione un técnico.");
         }
     }//GEN-LAST:event_jButton19ActionPerformed
-
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        this.esconder();
-        opcionesEmpleado.setVisible(true);
-    }//GEN-LAST:event_jButton21ActionPerformed
-
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        if (jTable2.getSelectedRow() != -1) {
-            this.esconder();
-            verSorteo.setVisible(true);
-            jLabel36.setText("" + restaurante.getSorteos().get(jTable2.getSelectedRow()).getCantidadGanadores());
-            jLabel37.setText(restaurante.getSorteos().get(jTable2.getSelectedRow()).getPremio());
-            String text = "<html><body>";
-            for (int i = 0; i < restaurante.getSorteos().get(jTable2.getSelectedRow()).getGanadores().size(); i++) {
-                text += restaurante.getSorteos().get(jTable2.getSelectedRow()).getGanadores().get(i).getNombre() + "<br>";
-            }
-            text += "</body></html>";
-            jLabel38.setText(text);
-
-        } else {
-            JOptionPane.showMessageDialog(null, "Seleccione un sorteo.");
-        }
-    }//GEN-LAST:event_jButton22ActionPerformed
-
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        if (jTable2.getSelectedRow() != -1) {
-            int i = JOptionPane.showConfirmDialog(null, "Desea eliminar este sorteo?", null, YES_NO_OPTION);
-            if (i == 0) {
-                restaurante.getSorteos().remove(jTable2.getSelectedRow());
-                this.inicializarSorteos();
-            }
-        } else {
-            JOptionPane.showMessageDialog(null, "Seleccione un sorteo.");
-        }
-    }//GEN-LAST:event_jButton28ActionPerformed
-
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        this.esconder();
-        this.inicializarSorteos();
-        sorteos.setVisible(true);
-    }//GEN-LAST:event_jButton29ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1589,15 +1370,11 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -1628,12 +1405,6 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1642,9 +1413,7 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
@@ -1658,9 +1427,7 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField9;
     private javax.swing.JPanel opcionesEmpleado;
     private javax.swing.JPanel sortear;
-    private javax.swing.JPanel sorteos;
     private javax.swing.JPanel verEvaluacion;
-    private javax.swing.JPanel verSorteo;
     // End of variables declaration//GEN-END:variables
 
     private void esconder() {
@@ -1668,8 +1435,6 @@ public class VentanaInicio extends javax.swing.JFrame {
         ingresarEvaluacion.setVisible(false);
         verEvaluacion.setVisible(false);
         evaluaciones.setVisible(false);
-        verSorteo.setVisible(false);
-        sorteos.setVisible(false);
         opcionesEmpleado.setVisible(false);
         sortear.setVisible(false);
         inicio.setVisible(false);
@@ -1684,6 +1449,14 @@ public class VentanaInicio extends javax.swing.JFrame {
         jTextArea1.setText("");
         jTextField10.setText("");
         jLabel14.setVisible(false);
+    }
+
+    private void entraMouse(int nroBoton) {
+
+    }
+
+    private void saleMouse(int nroBoton) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     private void clickBoton(int nroBoton) {
@@ -1805,22 +1578,6 @@ public class VentanaInicio extends javax.swing.JFrame {
                 jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
                 break;
         }
-    }
-
-    private void inicializarSorteos() {
-        ArrayList<Sorteo> lista = restaurante.getSorteos();
-        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
-        while (model.getRowCount() != 0) {
-            model.removeRow(0);
-        }
-        for (int i = 0; i < lista.size(); i++) {
-            String[] aux = new String[2];
-            aux[0] = "" + lista.get(i).getCantidadGanadores();
-            aux[1] = "" + lista.get(i).getPremio();
-            model.addRow((Object[]) aux);
-        }
-        jTable2.setVisible(true);
-        jTable2.setModel(model);
     }
 
 }

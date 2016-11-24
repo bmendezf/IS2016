@@ -6,7 +6,7 @@
 package inicio;
 
 import interfaz.VentanaInicio;
-import dominio.Restaurante;
+import mendezPeon.Restaurante;
 
 /**
  *
