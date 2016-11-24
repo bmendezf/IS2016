@@ -49,7 +49,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                 }
             }
         });
-
+        
     }
 
     /**
@@ -62,74 +62,74 @@ public class VentanaInicio extends javax.swing.JFrame {
     private void initComponents() {
 
         inicio = new javax.swing.JPanel();
-        cliente = new javax.swing.JButton();
-        empleado = new javax.swing.JButton();
+        btnCliente = new javax.swing.JButton();
+        btnEmpleado = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
         ingresarEvaluacion = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
+        btnAtrasEvaluacion = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton9 = new javax.swing.JButton();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        txtReseniaPersona = new javax.swing.JTextArea();
+        btnEnviarEvaluacion = new javax.swing.JButton();
+        txtNombrePersona = new javax.swing.JTextField();
+        txtTelPersona = new javax.swing.JTextField();
+        txtMailPersona = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        txtCiPersona = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
+        s1 = new javax.swing.JButton();
+        s2 = new javax.swing.JButton();
+        s3 = new javax.swing.JButton();
+        s4 = new javax.swing.JButton();
+        s5 = new javax.swing.JButton();
         opcionesEmpleado = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
+        btnAtrasOpEmpleado = new javax.swing.JButton();
+        btnEditarRestaurante = new javax.swing.JButton();
+        btnSortear = new javax.swing.JButton();
+        btnVerEvaluaciones = new javax.swing.JButton();
+        btnVerSorteos = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         editarRestaurante = new javax.swing.JPanel();
-        jButton6 = new javax.swing.JButton();
+        btnAtrasRestaurante = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
+        txtNombreRest = new javax.swing.JTextField();
+        txtDireccionRest = new javax.swing.JTextField();
+        txtHorarioRest = new javax.swing.JTextField();
+        txtTipoComidaRest = new javax.swing.JTextField();
+        btnGuardarRestaurante = new javax.swing.JButton();
         sortear = new javax.swing.JPanel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        btnAtrasRealizarSorteo = new javax.swing.JButton();
+        btnRealizarSorteo = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
+        txtCantGanadoresSorteo = new javax.swing.JTextField();
+        txtPremioSorteo = new javax.swing.JTextField();
+        lblGanadores = new javax.swing.JLabel();
         evaluaciones = new javax.swing.JPanel();
-        jButton17 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        btnAtrasVerEvaluaciones = new javax.swing.JButton();
+        panelEvaluaciones = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
+        btnVer1Evaluacion = new javax.swing.JButton();
+        btnEliminarEvaluacion = new javax.swing.JButton();
         verEvaluacion = new javax.swing.JPanel();
-        jButton18 = new javax.swing.JButton();
+        btnAtrasVerEvaluacion = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
+        e1 = new javax.swing.JButton();
+        e2 = new javax.swing.JButton();
+        e3 = new javax.swing.JButton();
+        e4 = new javax.swing.JButton();
+        e5 = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
@@ -139,13 +139,13 @@ public class VentanaInicio extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         sorteos = new javax.swing.JPanel();
-        jButton21 = new javax.swing.JButton();
-        jScrollPane3 = new javax.swing.JScrollPane();
+        btnVolverVerSorteos = new javax.swing.JButton();
+        panelSorteos = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jButton22 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
+        btnVer1Sorteo = new javax.swing.JButton();
+        btnEliminarSorteo = new javax.swing.JButton();
         verSorteo = new javax.swing.JPanel();
-        jButton29 = new javax.swing.JButton();
+        btnAtrasVerSorteo = new javax.swing.JButton();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
@@ -158,23 +158,23 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         inicio.setLayout(null);
 
-        cliente.setText("Cliente");
-        cliente.addActionListener(new java.awt.event.ActionListener() {
+        btnCliente.setText("Cliente");
+        btnCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clienteActionPerformed(evt);
+                btnClienteActionPerformed(evt);
             }
         });
-        inicio.add(cliente);
-        cliente.setBounds(410, 300, 120, 60);
+        inicio.add(btnCliente);
+        btnCliente.setBounds(410, 300, 120, 60);
 
-        empleado.setText("Empleado");
-        empleado.addActionListener(new java.awt.event.ActionListener() {
+        btnEmpleado.setText("Empleado");
+        btnEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                empleadoActionPerformed(evt);
+                btnEmpleadoActionPerformed(evt);
             }
         });
-        inicio.add(empleado);
-        empleado.setBounds(230, 300, 120, 60);
+        inicio.add(btnEmpleado);
+        btnEmpleado.setBounds(230, 300, 120, 60);
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/1.jpg"))); // NOI18N
         inicio.add(jLabel16);
@@ -184,10 +184,10 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         ingresarEvaluacion.setBackground(new java.awt.Color(219, 182, 173));
 
-        jButton5.setText("volver");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnAtrasEvaluacion.setText("volver");
+        btnAtrasEvaluacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnAtrasEvaluacionActionPerformed(evt);
             }
         });
 
@@ -201,22 +201,22 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jLabel11.setText("Reseña:");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtReseniaPersona.setColumns(20);
+        txtReseniaPersona.setRows(5);
+        jScrollPane1.setViewportView(txtReseniaPersona);
 
-        jButton9.setText("Enviar evaluacion");
-        jButton9.addFocusListener(new java.awt.event.FocusAdapter() {
+        btnEnviarEvaluacion.setText("Enviar evaluacion");
+        btnEnviarEvaluacion.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton9FocusGained(evt);
+                btnEnviarEvaluacionFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton9FocusLost(evt);
+                btnEnviarEvaluacionFocusLost(evt);
             }
         });
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btnEnviarEvaluacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btnEnviarEvaluacionActionPerformed(evt);
             }
         });
 
@@ -231,128 +231,128 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jLabel15.setText("CI:");
 
-        jButton10.setBackground(new java.awt.Color(219, 182, 173));
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton10.setBorderPainted(false);
-        jButton10.addFocusListener(new java.awt.event.FocusAdapter() {
+        s1.setBackground(new java.awt.Color(219, 182, 173));
+        s1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        s1.setBorderPainted(false);
+        s1.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton10FocusGained(evt);
+                s1FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton10FocusLost(evt);
+                s1FocusLost(evt);
             }
         });
-        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+        s1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton10MouseEntered(evt);
+                s1MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton10MouseExited(evt);
+                s1MouseExited(evt);
             }
         });
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        s1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                s1ActionPerformed(evt);
             }
         });
 
-        jButton11.setBackground(new java.awt.Color(219, 182, 173));
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton11.setBorderPainted(false);
-        jButton11.addFocusListener(new java.awt.event.FocusAdapter() {
+        s2.setBackground(new java.awt.Color(219, 182, 173));
+        s2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        s2.setBorderPainted(false);
+        s2.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton11FocusGained(evt);
+                s2FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton11FocusLost(evt);
+                s2FocusLost(evt);
             }
         });
-        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+        s2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton11MouseEntered(evt);
+                s2MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton11MouseExited(evt);
+                s2MouseExited(evt);
             }
         });
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        s2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                s2ActionPerformed(evt);
             }
         });
 
-        jButton12.setBackground(new java.awt.Color(219, 182, 173));
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton12.setBorderPainted(false);
-        jButton12.addFocusListener(new java.awt.event.FocusAdapter() {
+        s3.setBackground(new java.awt.Color(219, 182, 173));
+        s3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        s3.setBorderPainted(false);
+        s3.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton12FocusGained(evt);
+                s3FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton12FocusLost(evt);
+                s3FocusLost(evt);
             }
         });
-        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+        s3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton12MouseEntered(evt);
+                s3MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton12MouseExited(evt);
+                s3MouseExited(evt);
             }
         });
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        s3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                s3ActionPerformed(evt);
             }
         });
 
-        jButton13.setBackground(new java.awt.Color(219, 182, 173));
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton13.setBorderPainted(false);
-        jButton13.addFocusListener(new java.awt.event.FocusAdapter() {
+        s4.setBackground(new java.awt.Color(219, 182, 173));
+        s4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        s4.setBorderPainted(false);
+        s4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton13FocusGained(evt);
+                s4FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton13FocusLost(evt);
+                s4FocusLost(evt);
             }
         });
-        jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
+        s4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton13MouseEntered(evt);
+                s4MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton13MouseExited(evt);
+                s4MouseExited(evt);
             }
         });
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        s4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                s4ActionPerformed(evt);
             }
         });
 
-        jButton14.setBackground(new java.awt.Color(219, 182, 173));
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton14.setBorderPainted(false);
-        jButton14.addFocusListener(new java.awt.event.FocusAdapter() {
+        s5.setBackground(new java.awt.Color(219, 182, 173));
+        s5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        s5.setBorderPainted(false);
+        s5.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton14FocusGained(evt);
+                s5FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton14FocusLost(evt);
+                s5FocusLost(evt);
             }
         });
-        jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
+        s5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton14MouseEntered(evt);
+                s5MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton14MouseExited(evt);
+                s5MouseExited(evt);
             }
         });
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        s5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                s5ActionPerformed(evt);
             }
         });
 
@@ -361,7 +361,7 @@ public class VentanaInicio extends javax.swing.JFrame {
         ingresarEvaluacionLayout.setHorizontalGroup(
             ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ingresarEvaluacionLayout.createSequentialGroup()
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAtrasEvaluacion, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(ingresarEvaluacionLayout.createSequentialGroup()
                 .addGap(127, 127, 127)
@@ -370,38 +370,38 @@ public class VentanaInicio extends javax.swing.JFrame {
                     .addComponent(jLabel8)
                     .addComponent(jLabel9)
                     .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel10))
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11))
                 .addGap(34, 34, 34)
                 .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombrePersona, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(ingresarEvaluacionLayout.createSequentialGroup()
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTelPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(ingresarEvaluacionLayout.createSequentialGroup()
                         .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(txtMailPersona, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
+                            .addComponent(txtCiPersona, javax.swing.GroupLayout.Alignment.LEADING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(ingresarEvaluacionLayout.createSequentialGroup()
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(s1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(s2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(s3, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(s4, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(s5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(38, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ingresarEvaluacionLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEnviarEvaluacion, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(119, 119, 119))
         );
         ingresarEvaluacionLayout.setVerticalGroup(
@@ -410,88 +410,88 @@ public class VentanaInicio extends javax.swing.JFrame {
                 .addGap(47, 47, 47)
                 .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNombrePersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTelPersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel13))
                 .addGap(18, 18, 18)
                 .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtMailPersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(s1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(s2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(s3, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(s4, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(s5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCiPersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel14))
                 .addGap(18, 18, 18)
                 .addGroup(ingresarEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11))
+                    .addComponent(jLabel11)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEnviarEvaluacion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(71, 71, 71)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnAtrasEvaluacion, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         getContentPane().add(ingresarEvaluacion);
 
         opcionesEmpleado.setLayout(null);
 
-        jButton3.setText("volver");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnAtrasOpEmpleado.setText("volver");
+        btnAtrasOpEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnAtrasOpEmpleadoActionPerformed(evt);
             }
         });
-        opcionesEmpleado.add(jButton3);
-        jButton3.setBounds(0, 570, 70, 30);
+        opcionesEmpleado.add(btnAtrasOpEmpleado);
+        btnAtrasOpEmpleado.setBounds(0, 570, 70, 30);
 
-        jButton1.setText("Editar restaurante");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnEditarRestaurante.setText("Editar restaurante");
+        btnEditarRestaurante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnEditarRestauranteActionPerformed(evt);
             }
         });
-        opcionesEmpleado.add(jButton1);
-        jButton1.setBounds(220, 300, 140, 60);
+        opcionesEmpleado.add(btnEditarRestaurante);
+        btnEditarRestaurante.setBounds(220, 300, 140, 60);
 
-        jButton2.setText("Sortear");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnSortear.setText("Sortear");
+        btnSortear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnSortearActionPerformed(evt);
             }
         });
-        opcionesEmpleado.add(jButton2);
-        jButton2.setBounds(410, 300, 120, 60);
+        opcionesEmpleado.add(btnSortear);
+        btnSortear.setBounds(410, 300, 120, 60);
 
-        jButton15.setText("evaluaciones");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        btnVerEvaluaciones.setText("Ver Evaluaciones");
+        btnVerEvaluaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                btnVerEvaluacionesActionPerformed(evt);
             }
         });
-        opcionesEmpleado.add(jButton15);
-        jButton15.setBounds(220, 380, 140, 60);
+        opcionesEmpleado.add(btnVerEvaluaciones);
+        btnVerEvaluaciones.setBounds(220, 380, 140, 60);
 
-        jButton16.setText("Ver sorteos");
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        btnVerSorteos.setText("Ver sorteos");
+        btnVerSorteos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                btnVerSorteosActionPerformed(evt);
             }
         });
-        opcionesEmpleado.add(jButton16);
-        jButton16.setBounds(410, 380, 120, 60);
+        opcionesEmpleado.add(btnVerSorteos);
+        btnVerSorteos.setBounds(410, 380, 120, 60);
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/1.jpg"))); // NOI18N
         jLabel17.setText("jLabel17");
@@ -502,10 +502,10 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         editarRestaurante.setBackground(new java.awt.Color(219, 182, 173));
 
-        jButton6.setText("volver");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnAtrasRestaurante.setText("volver");
+        btnAtrasRestaurante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnAtrasRestauranteActionPerformed(evt);
             }
         });
 
@@ -517,10 +517,10 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jLabel4.setText("Tipo comida");
 
-        jButton4.setText("Guardar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarRestaurante.setText("Guardar");
+        btnGuardarRestaurante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnGuardarRestauranteActionPerformed(evt);
             }
         });
 
@@ -529,71 +529,73 @@ public class VentanaInicio extends javax.swing.JFrame {
         editarRestauranteLayout.setHorizontalGroup(
             editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(editarRestauranteLayout.createSequentialGroup()
-                .addComponent(jButton6)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(editarRestauranteLayout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(editarRestauranteLayout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(34, 34, 34)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(editarRestauranteLayout.createSequentialGroup()
-                        .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(344, Short.MAX_VALUE))
+                .addComponent(btnAtrasRestaurante)
+                .addGap(0, 737, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editarRestauranteLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(143, 143, 143))
+                .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(editarRestauranteLayout.createSequentialGroup()
+                        .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(editarRestauranteLayout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGap(34, 34, 34)
+                                .addComponent(txtTipoComidaRest, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(editarRestauranteLayout.createSequentialGroup()
+                                .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtHorarioRest, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtDireccionRest, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNombreRest, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editarRestauranteLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnGuardarRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(96, 96, 96))
         );
         editarRestauranteLayout.setVerticalGroup(
             editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editarRestauranteLayout.createSequentialGroup()
-                .addGap(46, 46, 46)
+                .addGap(120, 120, 120)
                 .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNombreRest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDireccionRest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtHorarioRest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(editarRestauranteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTipoComidaRest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(82, 82, 82)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 277, Short.MAX_VALUE)
-                .addComponent(jButton6))
+                .addComponent(btnGuardarRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
+                .addComponent(btnAtrasRestaurante))
         );
 
         getContentPane().add(editarRestaurante);
 
         sortear.setBackground(new java.awt.Color(219, 182, 173));
 
-        jButton7.setText("volver");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnAtrasRealizarSorteo.setText("volver");
+        btnAtrasRealizarSorteo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnAtrasRealizarSorteoActionPerformed(evt);
             }
         });
 
-        jButton8.setText("Sortear");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btnRealizarSorteo.setText("Sortear");
+        btnRealizarSorteo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btnRealizarSorteoActionPerformed(evt);
             }
         });
 
@@ -601,9 +603,9 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jLabel6.setText("Premio:");
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        txtCantGanadoresSorteo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                txtCantGanadoresSorteoActionPerformed(evt);
             }
         });
 
@@ -612,54 +614,54 @@ public class VentanaInicio extends javax.swing.JFrame {
         sortearLayout.setHorizontalGroup(
             sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sortearLayout.createSequentialGroup()
-                .addComponent(jButton7)
+                .addComponent(btnAtrasRealizarSorteo)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(sortearLayout.createSequentialGroup()
                 .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(sortearLayout.createSequentialGroup()
-                        .addGap(329, 329, 329)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(327, 327, 327)
+                        .addComponent(btnRealizarSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(sortearLayout.createSequentialGroup()
-                        .addGap(71, 71, 71)
-                        .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6))
-                        .addGap(18, 18, 18)
-                        .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(sortearLayout.createSequentialGroup()
-                        .addGap(157, 157, 157)
-                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(262, Short.MAX_VALUE))
+                        .addGap(170, 170, 170)
+                        .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblGanadores, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(sortearLayout.createSequentialGroup()
+                                .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel6))
+                                .addGap(18, 18, 18)
+                                .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtPremioSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCantGanadoresSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(235, Short.MAX_VALUE))
         );
         sortearLayout.setVerticalGroup(
             sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sortearLayout.createSequentialGroup()
-                .addGap(68, 68, 68)
+                .addGap(91, 91, 91)
                 .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCantGanadoresSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(sortearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(110, 110, 110)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addComponent(jButton7))
+                    .addComponent(txtPremioSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(64, 64, 64)
+                .addComponent(btnRealizarSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(lblGanadores, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                .addComponent(btnAtrasRealizarSorteo))
         );
 
         getContentPane().add(sortear);
 
         evaluaciones.setBackground(new java.awt.Color(219, 182, 173));
 
-        jButton17.setText("volver");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        btnAtrasVerEvaluaciones.setText("volver");
+        btnAtrasVerEvaluaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                btnAtrasVerEvaluacionesActionPerformed(evt);
             }
         });
 
@@ -682,19 +684,19 @@ public class VentanaInicio extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(jTable1);
+        panelEvaluaciones.setViewportView(jTable1);
 
-        jButton19.setText("ver");
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        btnVer1Evaluacion.setText("ver");
+        btnVer1Evaluacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                btnVer1EvaluacionActionPerformed(evt);
             }
         });
 
-        jButton20.setText("eliminar");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        btnEliminarEvaluacion.setText("eliminar");
+        btnEliminarEvaluacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                btnEliminarEvaluacionActionPerformed(evt);
             }
         });
 
@@ -703,39 +705,39 @@ public class VentanaInicio extends javax.swing.JFrame {
         evaluacionesLayout.setHorizontalGroup(
             evaluacionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(evaluacionesLayout.createSequentialGroup()
-                .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAtrasVerEvaluaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 730, Short.MAX_VALUE))
             .addGroup(evaluacionesLayout.createSequentialGroup()
                 .addGap(72, 72, 72)
                 .addGroup(evaluacionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(evaluacionesLayout.createSequentialGroup()
-                        .addComponent(jButton20)
+                        .addComponent(btnEliminarEvaluacion)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton19))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnVer1Evaluacion))
+                    .addComponent(panelEvaluaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         evaluacionesLayout.setVerticalGroup(
             evaluacionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(evaluacionesLayout.createSequentialGroup()
                 .addGap(51, 51, 51)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 441, Short.MAX_VALUE)
+                .addComponent(panelEvaluaciones, javax.swing.GroupLayout.DEFAULT_SIZE, 441, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(evaluacionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton19)
-                    .addComponent(jButton20))
+                    .addComponent(btnVer1Evaluacion)
+                    .addComponent(btnEliminarEvaluacion))
                 .addGap(34, 34, 34)
-                .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnAtrasVerEvaluaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         getContentPane().add(evaluaciones);
 
         verEvaluacion.setBackground(new java.awt.Color(219, 182, 173));
 
-        jButton18.setText("volver");
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        btnAtrasVerEvaluacion.setText("volver");
+        btnAtrasVerEvaluacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                btnAtrasVerEvaluacionActionPerformed(evt);
             }
         });
 
@@ -745,128 +747,128 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jLabel21.setText("CI:");
 
-        jButton23.setBackground(new java.awt.Color(219, 182, 173));
-        jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton23.setBorderPainted(false);
-        jButton23.addFocusListener(new java.awt.event.FocusAdapter() {
+        e1.setBackground(new java.awt.Color(219, 182, 173));
+        e1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        e1.setBorderPainted(false);
+        e1.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton23FocusGained(evt);
+                e1FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton23FocusLost(evt);
+                e1FocusLost(evt);
             }
         });
-        jButton23.addMouseListener(new java.awt.event.MouseAdapter() {
+        e1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton23MouseEntered(evt);
+                e1MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton23MouseExited(evt);
+                e1MouseExited(evt);
             }
         });
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        e1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                e1ActionPerformed(evt);
             }
         });
 
-        jButton24.setBackground(new java.awt.Color(219, 182, 173));
-        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton24.setBorderPainted(false);
-        jButton24.addFocusListener(new java.awt.event.FocusAdapter() {
+        e2.setBackground(new java.awt.Color(219, 182, 173));
+        e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        e2.setBorderPainted(false);
+        e2.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton24FocusGained(evt);
+                e2FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton24FocusLost(evt);
+                e2FocusLost(evt);
             }
         });
-        jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
+        e2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton24MouseEntered(evt);
+                e2MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton24MouseExited(evt);
+                e2MouseExited(evt);
             }
         });
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
+        e2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
+                e2ActionPerformed(evt);
             }
         });
 
-        jButton25.setBackground(new java.awt.Color(219, 182, 173));
-        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton25.setBorderPainted(false);
-        jButton25.addFocusListener(new java.awt.event.FocusAdapter() {
+        e3.setBackground(new java.awt.Color(219, 182, 173));
+        e3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        e3.setBorderPainted(false);
+        e3.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton25FocusGained(evt);
+                e3FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton25FocusLost(evt);
+                e3FocusLost(evt);
             }
         });
-        jButton25.addMouseListener(new java.awt.event.MouseAdapter() {
+        e3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton25MouseEntered(evt);
+                e3MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton25MouseExited(evt);
+                e3MouseExited(evt);
             }
         });
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
+        e3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
+                e3ActionPerformed(evt);
             }
         });
 
-        jButton26.setBackground(new java.awt.Color(219, 182, 173));
-        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton26.setBorderPainted(false);
-        jButton26.addFocusListener(new java.awt.event.FocusAdapter() {
+        e4.setBackground(new java.awt.Color(219, 182, 173));
+        e4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        e4.setBorderPainted(false);
+        e4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton26FocusGained(evt);
+                e4FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton26FocusLost(evt);
+                e4FocusLost(evt);
             }
         });
-        jButton26.addMouseListener(new java.awt.event.MouseAdapter() {
+        e4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton26MouseEntered(evt);
+                e4MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton26MouseExited(evt);
+                e4MouseExited(evt);
             }
         });
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
+        e4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
+                e4ActionPerformed(evt);
             }
         });
 
-        jButton27.setBackground(new java.awt.Color(219, 182, 173));
-        jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
-        jButton27.setBorderPainted(false);
-        jButton27.addFocusListener(new java.awt.event.FocusAdapter() {
+        e5.setBackground(new java.awt.Color(219, 182, 173));
+        e5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png"))); // NOI18N
+        e5.setBorderPainted(false);
+        e5.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jButton27FocusGained(evt);
+                e5FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jButton27FocusLost(evt);
+                e5FocusLost(evt);
             }
         });
-        jButton27.addMouseListener(new java.awt.event.MouseAdapter() {
+        e5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton27MouseEntered(evt);
+                e5MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton27MouseExited(evt);
+                e5MouseExited(evt);
             }
         });
-        jButton27.addActionListener(new java.awt.event.ActionListener() {
+        e5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton27ActionPerformed(evt);
+                e5ActionPerformed(evt);
             }
         });
 
@@ -891,7 +893,7 @@ public class VentanaInicio extends javax.swing.JFrame {
         verEvaluacionLayout.setHorizontalGroup(
             verEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(verEvaluacionLayout.createSequentialGroup()
-                .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAtrasVerEvaluacion, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 730, Short.MAX_VALUE))
             .addGroup(verEvaluacionLayout.createSequentialGroup()
                 .addGap(203, 203, 203)
@@ -909,15 +911,15 @@ public class VentanaInicio extends javax.swing.JFrame {
                     .addComponent(jLabel27)
                     .addComponent(jLabel26)
                     .addGroup(verEvaluacionLayout.createSequentialGroup()
-                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(e1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(e2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(e3, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(e4, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(e5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel25))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -939,11 +941,11 @@ public class VentanaInicio extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(verEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(e1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(e2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(e3, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(e4, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(e5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(verEvaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
@@ -953,17 +955,17 @@ public class VentanaInicio extends javax.swing.JFrame {
                     .addComponent(jLabel20)
                     .addComponent(jLabel29))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 295, Short.MAX_VALUE)
-                .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnAtrasVerEvaluacion, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         getContentPane().add(verEvaluacion);
 
         sorteos.setBackground(new java.awt.Color(219, 182, 173));
 
-        jButton21.setText("volver");
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        btnVolverVerSorteos.setText("volver");
+        btnVolverVerSorteos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                btnVolverVerSorteosActionPerformed(evt);
             }
         });
 
@@ -986,19 +988,19 @@ public class VentanaInicio extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane3.setViewportView(jTable2);
+        panelSorteos.setViewportView(jTable2);
 
-        jButton22.setText("ver");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        btnVer1Sorteo.setText("ver");
+        btnVer1Sorteo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                btnVer1SorteoActionPerformed(evt);
             }
         });
 
-        jButton28.setText("eliminar");
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
+        btnEliminarSorteo.setText("eliminar");
+        btnEliminarSorteo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
+                btnEliminarSorteoActionPerformed(evt);
             }
         });
 
@@ -1007,39 +1009,39 @@ public class VentanaInicio extends javax.swing.JFrame {
         sorteosLayout.setHorizontalGroup(
             sorteosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sorteosLayout.createSequentialGroup()
-                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnVolverVerSorteos, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 730, Short.MAX_VALUE))
             .addGroup(sorteosLayout.createSequentialGroup()
                 .addGap(72, 72, 72)
                 .addGroup(sorteosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(sorteosLayout.createSequentialGroup()
-                        .addComponent(jButton28)
+                        .addComponent(btnEliminarSorteo)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton22))
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnVer1Sorteo))
+                    .addComponent(panelSorteos, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         sorteosLayout.setVerticalGroup(
             sorteosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sorteosLayout.createSequentialGroup()
                 .addGap(51, 51, 51)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 441, Short.MAX_VALUE)
+                .addComponent(panelSorteos, javax.swing.GroupLayout.DEFAULT_SIZE, 441, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(sorteosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton22)
-                    .addComponent(jButton28))
+                    .addComponent(btnVer1Sorteo)
+                    .addComponent(btnEliminarSorteo))
                 .addGap(34, 34, 34)
-                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnVolverVerSorteos, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         getContentPane().add(sorteos);
 
         verSorteo.setBackground(new java.awt.Color(219, 182, 173));
 
-        jButton29.setText("volver");
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
+        btnAtrasVerSorteo.setText("volver");
+        btnAtrasVerSorteo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
+                btnAtrasVerSorteoActionPerformed(evt);
             }
         });
 
@@ -1060,7 +1062,7 @@ public class VentanaInicio extends javax.swing.JFrame {
         verSorteoLayout.setHorizontalGroup(
             verSorteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(verSorteoLayout.createSequentialGroup()
-                .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAtrasVerSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 730, Short.MAX_VALUE))
             .addGroup(verSorteoLayout.createSequentialGroup()
                 .addGap(194, 194, 194)
@@ -1091,7 +1093,7 @@ public class VentanaInicio extends javax.swing.JFrame {
                     .addComponent(jLabel35)
                     .addComponent(jLabel38))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 382, Short.MAX_VALUE)
-                .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnAtrasVerSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         getContentPane().add(verSorteo);
@@ -1099,39 +1101,39 @@ public class VentanaInicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        restaurante.setNombre(jTextField1.getText());
-        restaurante.setDireccion(jTextField2.getText());
-        restaurante.setHorario(jTextField3.getText());
-        restaurante.setTipoComida(jTextField4.getText());
+    private void btnGuardarRestauranteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarRestauranteActionPerformed
+        restaurante.setNombre(txtNombreRest.getText());
+        restaurante.setDireccion(txtDireccionRest.getText());
+        restaurante.setHorario(txtHorarioRest.getText());
+        restaurante.setTipoComida(txtTipoComidaRest.getText());
         JOptionPane.showMessageDialog(this, "Guardado correctamente.");
         this.esconder();
         opcionesEmpleado.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnGuardarRestauranteActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void txtCantGanadoresSorteoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCantGanadoresSorteoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_txtCantGanadoresSorteoActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        boolean telCorrecto = Persona.validarTelefono(jTextField8.getText());
-        boolean correoCorrecto = Persona.verificarCorreo(jTextField9.getText());
-        boolean ciCorrecta = Persona.verificarCI(jTextField10.getText());
+    private void btnEnviarEvaluacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarEvaluacionActionPerformed
+        boolean telCorrecto = Persona.validarTelefono(txtTelPersona.getText());
+        boolean correoCorrecto = Persona.verificarCorreo(txtMailPersona.getText());
+        boolean ciCorrecta = Persona.verificarCI(txtCiPersona.getText());
         if (telCorrecto && correoCorrecto && ciCorrecta) {
             Evaluacion evaluacion = new Evaluacion();
-            evaluacion.getPersona().setNombre(jTextField7.getText());
-            if (jTextField8.getText().equals("")) {
+            evaluacion.getPersona().setNombre(txtNombrePersona.getText());
+            if (txtTelPersona.getText().equals("")) {
                 evaluacion.getPersona().setTelefono(0);
             } else {
-                evaluacion.getPersona().setTelefono(Integer.parseInt(jTextField8.getText()));
+                evaluacion.getPersona().setTelefono(Integer.parseInt(txtTelPersona.getText()));
             }
-            evaluacion.getPersona().setMail(jTextField9.getText());
-            evaluacion.getPersona().setCi(Integer.parseInt(jTextField10.getText()));
+            evaluacion.getPersona().setMail(txtMailPersona.getText());
+            evaluacion.getPersona().setCi(Integer.parseInt(txtCiPersona.getText()));
             if (cantidadEstrellas == 0) {
                 cantidadEstrellas = 1;
             }
             evaluacion.setEstrellas(cantidadEstrellas);
-            evaluacion.setResenia(jTextArea1.getText());
+            evaluacion.setResenia(txtReseniaPersona.getText());
             restaurante.getEvaluaciones().add(evaluacion);
             JOptionPane.showMessageDialog(this, "Ingresado correctamente.");
             this.esconder();
@@ -1143,156 +1145,378 @@ public class VentanaInicio extends javax.swing.JFrame {
             jLabel13.setVisible(!telCorrecto);
             jLabel14.setVisible(!ciCorrecta);
         }
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_btnEnviarEvaluacionActionPerformed
 
-    private void clienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clienteActionPerformed
+    private void btnClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClienteActionPerformed
         this.esconder();
         ingresarEvaluacion.setVisible(true);
         this.iniEvaluacion();
-    }//GEN-LAST:event_clienteActionPerformed
+    }//GEN-LAST:event_btnClienteActionPerformed
 
-    private void empleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_empleadoActionPerformed
+    private void btnEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmpleadoActionPerformed
         this.esconder();
         opcionesEmpleado.setVisible(true);
-    }//GEN-LAST:event_empleadoActionPerformed
+    }//GEN-LAST:event_btnEmpleadoActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnAtrasEvaluacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasEvaluacionActionPerformed
         this.esconder();
         inicio.setVisible(true);
 
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnAtrasEvaluacionActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnAtrasOpEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasOpEmpleadoActionPerformed
         this.esconder();
         inicio.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnAtrasOpEmpleadoActionPerformed
 
-    private void jButton9FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton9FocusGained
+    private void btnEnviarEvaluacionFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnEnviarEvaluacionFocusGained
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9FocusGained
+    }//GEN-LAST:event_btnEnviarEvaluacionFocusGained
 
-    private void jButton9FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton9FocusLost
+    private void btnEnviarEvaluacionFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnEnviarEvaluacionFocusLost
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9FocusLost
+    }//GEN-LAST:event_btnEnviarEvaluacionFocusLost
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         cantidadEstrellas = 1;
         clickBoton(1);
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_s1ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void s2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s2ActionPerformed
         cantidadEstrellas = 2;
         clickBoton(2);
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_s2ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void s3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s3ActionPerformed
         clickBoton(3);
         cantidadEstrellas = 3;
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_s3ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void s4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s4ActionPerformed
         clickBoton(4);
         cantidadEstrellas = 4;// TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_s4ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void s5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s5ActionPerformed
         clickBoton(5);
         cantidadEstrellas = 5;
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_s5ActionPerformed
 
-    private void jButton10FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton10FocusGained
+    private void s1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s1FocusGained
         clickBoton(1);
-    }//GEN-LAST:event_jButton10FocusGained
+    }//GEN-LAST:event_s1FocusGained
 
-    private void jButton10FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton10FocusLost
+    private void s1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s1FocusLost
         clickBoton(cantidadEstrellas);
-    }//GEN-LAST:event_jButton10FocusLost
+    }//GEN-LAST:event_s1FocusLost
 
-    private void jButton11FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton11FocusGained
+    private void s2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s2FocusGained
         clickBoton(2);    // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11FocusGained
+    }//GEN-LAST:event_s2FocusGained
 
-    private void jButton11FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton11FocusLost
+    private void s2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s2FocusLost
         clickBoton(cantidadEstrellas);
-    }//GEN-LAST:event_jButton11FocusLost
+    }//GEN-LAST:event_s2FocusLost
 
-    private void jButton12FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton12FocusLost
+    private void s3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s3FocusLost
         clickBoton(cantidadEstrellas);
-    }//GEN-LAST:event_jButton12FocusLost
+    }//GEN-LAST:event_s3FocusLost
 
-    private void jButton13FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton13FocusLost
+    private void s4FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s4FocusLost
         clickBoton(cantidadEstrellas);
-    }//GEN-LAST:event_jButton13FocusLost
+    }//GEN-LAST:event_s4FocusLost
 
-    private void jButton14FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton14FocusLost
+    private void s5FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s5FocusLost
         clickBoton(cantidadEstrellas);
-    }//GEN-LAST:event_jButton14FocusLost
+    }//GEN-LAST:event_s5FocusLost
 
-    private void jButton12FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton12FocusGained
+    private void s3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s3FocusGained
         clickBoton(3);
-    }//GEN-LAST:event_jButton12FocusGained
+    }//GEN-LAST:event_s3FocusGained
 
-    private void jButton13FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton13FocusGained
+    private void s4FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s4FocusGained
         clickBoton(4);
-    }//GEN-LAST:event_jButton13FocusGained
+    }//GEN-LAST:event_s4FocusGained
 
-    private void jButton14FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton14FocusGained
+    private void s5FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_s5FocusGained
         clickBoton(5);
-    }//GEN-LAST:event_jButton14FocusGained
+    }//GEN-LAST:event_s5FocusGained
 
-    private void jButton10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseEntered
+    private void s1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s1MouseEntered
         clickBoton(1);
-    }//GEN-LAST:event_jButton10MouseEntered
+    }//GEN-LAST:event_s1MouseEntered
 
-    private void jButton11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseEntered
+    private void s2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s2MouseEntered
         clickBoton(2);
-    }//GEN-LAST:event_jButton11MouseEntered
+    }//GEN-LAST:event_s2MouseEntered
 
-    private void jButton12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseEntered
+    private void s3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s3MouseEntered
         clickBoton(3);
-    }//GEN-LAST:event_jButton12MouseEntered
+    }//GEN-LAST:event_s3MouseEntered
 
-    private void jButton13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseEntered
+    private void s4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s4MouseEntered
         clickBoton(4);
-    }//GEN-LAST:event_jButton13MouseEntered
+    }//GEN-LAST:event_s4MouseEntered
 
-    private void jButton14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MouseEntered
+    private void s5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s5MouseEntered
         clickBoton(5);
-    }//GEN-LAST:event_jButton14MouseEntered
+    }//GEN-LAST:event_s5MouseEntered
 
-    private void jButton10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseExited
+    private void s1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s1MouseExited
         clickBoton(cantidadEstrellas);
-    }//GEN-LAST:event_jButton10MouseExited
+    }//GEN-LAST:event_s1MouseExited
 
-    private void jButton11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseExited
+    private void s2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s2MouseExited
         clickBoton(cantidadEstrellas);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11MouseExited
+    }//GEN-LAST:event_s2MouseExited
 
-    private void jButton12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseExited
+    private void s3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s3MouseExited
         clickBoton(cantidadEstrellas);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12MouseExited
+    }//GEN-LAST:event_s3MouseExited
 
-    private void jButton13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseExited
+    private void s4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s4MouseExited
         clickBoton(cantidadEstrellas);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13MouseExited
+    }//GEN-LAST:event_s4MouseExited
 
-    private void jButton14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MouseExited
+    private void s5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s5MouseExited
         clickBoton(cantidadEstrellas);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14MouseExited
+    }//GEN-LAST:event_s5MouseExited
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void btnSortearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSortearActionPerformed
+        this.esconder();
+        sortear.setVisible(true);
+        txtCantGanadoresSorteo.setText("");
+        txtPremioSorteo.setText("");
+        lblGanadores.setText("");
+    }//GEN-LAST:event_btnSortearActionPerformed
 
-        if (!jTextField5.getText().isEmpty()) {
+    private void btnEditarRestauranteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarRestauranteActionPerformed
+        this.esconder();
+        this.inicializarRestaurante();
+        editarRestaurante.setVisible(true);
+    }//GEN-LAST:event_btnEditarRestauranteActionPerformed
+
+    private void btnAtrasRealizarSorteoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasRealizarSorteoActionPerformed
+        this.esconder();
+        opcionesEmpleado.setVisible(true);
+    }//GEN-LAST:event_btnAtrasRealizarSorteoActionPerformed
+
+    private void btnVerEvaluacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerEvaluacionesActionPerformed
+        if (!restaurante.getEvaluaciones().isEmpty()) {
+            this.inicializarEvaluaciones();
+            this.esconder();
+            evaluaciones.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "No se han encontrado evaluaciones");
+        }
+    }//GEN-LAST:event_btnVerEvaluacionesActionPerformed
+
+    private void btnVerSorteosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerSorteosActionPerformed
+        if (!restaurante.getSorteos().isEmpty()) {
+            this.inicializarSorteos();
+            this.esconder();
+            sorteos.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "No se han encontrado sorteos");
+        }
+    }//GEN-LAST:event_btnVerSorteosActionPerformed
+
+    private void btnAtrasVerEvaluacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasVerEvaluacionesActionPerformed
+        this.esconder();
+        opcionesEmpleado.setVisible(true);
+    }//GEN-LAST:event_btnAtrasVerEvaluacionesActionPerformed
+
+    private void btnAtrasRestauranteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasRestauranteActionPerformed
+        this.esconder();
+        opcionesEmpleado.setVisible(true);
+    }//GEN-LAST:event_btnAtrasRestauranteActionPerformed
+
+    private void btnAtrasVerEvaluacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasVerEvaluacionActionPerformed
+        this.esconder();
+        evaluaciones.setVisible(true);
+    }//GEN-LAST:event_btnAtrasVerEvaluacionActionPerformed
+
+    private void btnEliminarEvaluacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarEvaluacionActionPerformed
+        if (jTable1.getSelectedRow() != -1) {
+            int i = JOptionPane.showConfirmDialog(null, "Desea eliminar esta reseña?", null, YES_NO_OPTION);
+            if (i == 0) {
+                restaurante.getEvaluaciones().remove(jTable1.getSelectedRow());
+                this.inicializarEvaluaciones();
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleccione una evaluacion.");
+        }
+    }//GEN-LAST:event_btnEliminarEvaluacionActionPerformed
+
+    private void e1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e1FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e1FocusGained
+
+    private void e1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e1FocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e1FocusLost
+
+    private void e1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e1MouseEntered
+
+    private void e1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e1MouseExited
+
+    private void e1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e1ActionPerformed
+
+    private void e2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e2FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e2FocusGained
+
+    private void e2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e2FocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e2FocusLost
+
+    private void e2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e2MouseEntered
+
+    private void e2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e2MouseExited
+
+    private void e2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e2ActionPerformed
+
+    private void e3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e3FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e3FocusGained
+
+    private void e3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e3FocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e3FocusLost
+
+    private void e3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e3MouseEntered
+
+    private void e3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e3MouseExited
+
+    private void e3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e3ActionPerformed
+
+    private void e4FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e4FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e4FocusGained
+
+    private void e4FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e4FocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e4FocusLost
+
+    private void e4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e4MouseEntered
+
+    private void e4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e4MouseExited
+
+    private void e4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e4ActionPerformed
+
+    private void e5FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e5FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e5FocusGained
+
+    private void e5FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_e5FocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e5FocusLost
+
+    private void e5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e5MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e5MouseEntered
+
+    private void e5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e5MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e5MouseExited
+
+    private void e5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_e5ActionPerformed
+
+    private void btnVer1EvaluacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVer1EvaluacionActionPerformed
+        if (jTable1.getSelectedRow() != -1) {
+            this.esconder();
+            verEvaluacion.setVisible(true);
+            jLabel25.setText(restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getPersona().getNombre());
+            jLabel26.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getPersona().getTelefono());
+            jLabel27.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getPersona().getMail());
+            jLabel28.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getPersona().getCi());
+            jLabel29.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getResenia());
+            this.cargarEstrellasResenia(restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getEstrellas());
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleccione una evaluacion.");
+        }
+    }//GEN-LAST:event_btnVer1EvaluacionActionPerformed
+
+    private void btnVolverVerSorteosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverVerSorteosActionPerformed
+        this.esconder();
+        opcionesEmpleado.setVisible(true);
+    }//GEN-LAST:event_btnVolverVerSorteosActionPerformed
+
+    private void btnVer1SorteoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVer1SorteoActionPerformed
+        if (jTable2.getSelectedRow() != -1) {
+            this.esconder();
+            verSorteo.setVisible(true);
+            jLabel36.setText("" + restaurante.getSorteos().get(jTable2.getSelectedRow()).getCantidadGanadores());
+            jLabel37.setText(restaurante.getSorteos().get(jTable2.getSelectedRow()).getPremio());
+            String text = "<html><body>";
+            for (int i = 0; i < restaurante.getSorteos().get(jTable2.getSelectedRow()).getGanadores().size(); i++) {
+                text += restaurante.getSorteos().get(jTable2.getSelectedRow()).getGanadores().get(i).getNombre() + "<br>";
+            }
+            text += "</body></html>";
+            jLabel38.setText(text);
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleccione un sorteo.");
+        }
+    }//GEN-LAST:event_btnVer1SorteoActionPerformed
+
+    private void btnEliminarSorteoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarSorteoActionPerformed
+        if (jTable2.getSelectedRow() != -1) {
+            int i = JOptionPane.showConfirmDialog(null, "Desea eliminar este sorteo?", null, YES_NO_OPTION);
+            if (i == 0) {
+                restaurante.getSorteos().remove(jTable2.getSelectedRow());
+                this.inicializarSorteos();
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleccione un sorteo.");
+        }
+    }//GEN-LAST:event_btnEliminarSorteoActionPerformed
+
+    private void btnAtrasVerSorteoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasVerSorteoActionPerformed
+        this.esconder();
+        this.inicializarSorteos();
+        sorteos.setVisible(true);
+    }//GEN-LAST:event_btnAtrasVerSorteoActionPerformed
+
+    private void btnRealizarSorteoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRealizarSorteoActionPerformed
+
+        if ((!txtCantGanadoresSorteo.getText().isEmpty()) && (!restaurante.getEvaluaciones().isEmpty())) {
 
             boolean ingresaNum = false;
             int totalGanadores = 0;
             try {
-                totalGanadores = Integer.parseInt(jTextField5.getText());
+                totalGanadores = Integer.parseInt(txtCantGanadoresSorteo.getText());
                 ingresaNum = true;
             } catch (NumberFormatException e) {
                 ingresaNum = false;
             }
-            if (ingresaNum) {
+            if (ingresaNum && totalGanadores > 0) {
                 Sorteo s = new Sorteo();
                 ArrayList<Persona> ganadores = new ArrayList<Persona>();
                 Random r = new Random();
@@ -1327,7 +1551,7 @@ public class VentanaInicio extends javax.swing.JFrame {
 
                 //Anuncio ganadores
                 s.setCantidadGanadores(totalGanadores);
-                s.setPremio(jTextField6.getText());
+                s.setPremio(txtPremioSorteo.getText());
 
                 String text = "<html><body>Los ganadores son: <br>";
                 for (int i = 0; i < ganadores.size(); i++) {
@@ -1335,276 +1559,53 @@ public class VentanaInicio extends javax.swing.JFrame {
                     s.addGanador(ganadores.get(i));
                 }
                 text += "</body></html>";
-                jLabel18.setText(text);
+                lblGanadores.setText(text);
+                s.notificarGanadores();
                 JOptionPane.showMessageDialog(this, "Se le ha enviado un email a los ganadores del sorteo");
                 restaurante.getSorteos().add(s);
-            }
-
-        }
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        this.esconder();
-        sortear.setVisible(true);
-        jTextField5.setText("");
-        jTextField6.setText("");
-        jLabel18.setText("");
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        this.esconder();
-        this.inicializarRestaurante();
-        editarRestaurante.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        this.esconder();
-        opcionesEmpleado.setVisible(true);
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        if (!restaurante.getEvaluaciones().isEmpty()) {
-            this.inicializarEvaluaciones();
-            this.esconder();
-            evaluaciones.setVisible(true);
-        } else {
-            JOptionPane.showMessageDialog(null, "No se han encontrado evaluaciones");
-        }
-    }//GEN-LAST:event_jButton15ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        if (!restaurante.getSorteos().isEmpty()) {
-            this.inicializarSorteos();
-            this.esconder();
-            sorteos.setVisible(true);
-        } else {
-            JOptionPane.showMessageDialog(null, "No se han encontrado sorteos");
-        }
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        this.esconder();
-        opcionesEmpleado.setVisible(true);
-    }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        this.esconder();
-        opcionesEmpleado.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        this.esconder();
-        evaluaciones.setVisible(true);
-    }//GEN-LAST:event_jButton18ActionPerformed
-
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        if (jTable1.getSelectedRow() != -1) {
-            int i = JOptionPane.showConfirmDialog(null, "Desea eliminar esta reseña?", null, YES_NO_OPTION);
-            if (i == 0) {
-                restaurante.getEvaluaciones().remove(jTable1.getSelectedRow());
-                this.inicializarEvaluaciones();
+            } else {
+                JOptionPane.showMessageDialog(this, "Ingrese un numero correcto para cantidad de ganadores");
             }
         } else {
-            JOptionPane.showMessageDialog(null, "Seleccione una evaluacion.");
+            JOptionPane.showMessageDialog(this, "Faltan datos para realizar el sorteo");
         }
-    }//GEN-LAST:event_jButton20ActionPerformed
-
-    private void jButton23FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton23FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23FocusGained
-
-    private void jButton23FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton23FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23FocusLost
-
-    private void jButton23MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23MouseEntered
-
-    private void jButton23MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23MouseExited
-
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
-
-    private void jButton24FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton24FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24FocusGained
-
-    private void jButton24FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton24FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24FocusLost
-
-    private void jButton24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24MouseEntered
-
-    private void jButton24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24MouseExited
-
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24ActionPerformed
-
-    private void jButton25FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton25FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25FocusGained
-
-    private void jButton25FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton25FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25FocusLost
-
-    private void jButton25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton25MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25MouseEntered
-
-    private void jButton25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton25MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25MouseExited
-
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25ActionPerformed
-
-    private void jButton26FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton26FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26FocusGained
-
-    private void jButton26FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton26FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26FocusLost
-
-    private void jButton26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26MouseEntered
-
-    private void jButton26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26MouseExited
-
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26ActionPerformed
-
-    private void jButton27FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton27FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27FocusGained
-
-    private void jButton27FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton27FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27FocusLost
-
-    private void jButton27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27MouseEntered
-
-    private void jButton27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27MouseExited
-
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27ActionPerformed
-
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        if (jTable1.getSelectedRow() != -1) {
-            this.esconder();
-            verEvaluacion.setVisible(true);
-            jLabel25.setText(restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getPersona().getNombre());
-            jLabel26.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getPersona().getTelefono());
-            jLabel27.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getPersona().getMail());
-            jLabel28.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getPersona().getCi());
-            jLabel29.setText("" + restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getResenia());
-            this.cargarEstrellasResenia(restaurante.getEvaluaciones().get(jTable1.getSelectedRow()).getEstrellas());
-        } else {
-            JOptionPane.showMessageDialog(null, "Seleccione una evaluacion.");
-        }
-    }//GEN-LAST:event_jButton19ActionPerformed
-
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        this.esconder();
-        opcionesEmpleado.setVisible(true);
-    }//GEN-LAST:event_jButton21ActionPerformed
-
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        if (jTable2.getSelectedRow() != -1) {
-            this.esconder();
-            verSorteo.setVisible(true);
-            jLabel36.setText("" + restaurante.getSorteos().get(jTable2.getSelectedRow()).getCantidadGanadores());
-            jLabel37.setText(restaurante.getSorteos().get(jTable2.getSelectedRow()).getPremio());
-            String text = "<html><body>";
-            for (int i = 0; i < restaurante.getSorteos().get(jTable2.getSelectedRow()).getGanadores().size(); i++) {
-                text += restaurante.getSorteos().get(jTable2.getSelectedRow()).getGanadores().get(i).getNombre() + "<br>";
-            }
-            text += "</body></html>";
-            jLabel38.setText(text);
-
-        } else {
-            JOptionPane.showMessageDialog(null, "Seleccione un sorteo.");
-        }
-    }//GEN-LAST:event_jButton22ActionPerformed
-
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        if (jTable2.getSelectedRow() != -1) {
-            int i = JOptionPane.showConfirmDialog(null, "Desea eliminar este sorteo?", null, YES_NO_OPTION);
-            if (i == 0) {
-                restaurante.getSorteos().remove(jTable2.getSelectedRow());
-                this.inicializarSorteos();
-            }
-        } else {
-            JOptionPane.showMessageDialog(null, "Seleccione un sorteo.");
-        }
-    }//GEN-LAST:event_jButton28ActionPerformed
-
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        this.esconder();
-        this.inicializarSorteos();
-        sorteos.setVisible(true);
-    }//GEN-LAST:event_jButton29ActionPerformed
+    }//GEN-LAST:event_btnRealizarSorteoActionPerformed
 
     /**
      * @param args the command line arguments
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton cliente;
+    private javax.swing.JButton btnAtrasEvaluacion;
+    private javax.swing.JButton btnAtrasOpEmpleado;
+    private javax.swing.JButton btnAtrasRealizarSorteo;
+    private javax.swing.JButton btnAtrasRestaurante;
+    private javax.swing.JButton btnAtrasVerEvaluacion;
+    private javax.swing.JButton btnAtrasVerEvaluaciones;
+    private javax.swing.JButton btnAtrasVerSorteo;
+    private javax.swing.JButton btnCliente;
+    private javax.swing.JButton btnEditarRestaurante;
+    private javax.swing.JButton btnEliminarEvaluacion;
+    private javax.swing.JButton btnEliminarSorteo;
+    private javax.swing.JButton btnEmpleado;
+    private javax.swing.JButton btnEnviarEvaluacion;
+    private javax.swing.JButton btnGuardarRestaurante;
+    private javax.swing.JButton btnRealizarSorteo;
+    private javax.swing.JButton btnSortear;
+    private javax.swing.JButton btnVer1Evaluacion;
+    private javax.swing.JButton btnVer1Sorteo;
+    private javax.swing.JButton btnVerEvaluaciones;
+    private javax.swing.JButton btnVerSorteos;
+    private javax.swing.JButton btnVolverVerSorteos;
+    private javax.swing.JButton e1;
+    private javax.swing.JButton e2;
+    private javax.swing.JButton e3;
+    private javax.swing.JButton e4;
+    private javax.swing.JButton e5;
     private javax.swing.JPanel editarRestaurante;
-    private javax.swing.JButton empleado;
     private javax.swing.JPanel evaluaciones;
     private javax.swing.JPanel ingresarEvaluacion;
     private javax.swing.JPanel inicio;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1614,7 +1615,6 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
@@ -1641,24 +1641,30 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JLabel lblGanadores;
     private javax.swing.JPanel opcionesEmpleado;
+    private javax.swing.JScrollPane panelEvaluaciones;
+    private javax.swing.JScrollPane panelSorteos;
+    private javax.swing.JButton s1;
+    private javax.swing.JButton s2;
+    private javax.swing.JButton s3;
+    private javax.swing.JButton s4;
+    private javax.swing.JButton s5;
     private javax.swing.JPanel sortear;
     private javax.swing.JPanel sorteos;
+    private javax.swing.JTextField txtCantGanadoresSorteo;
+    private javax.swing.JTextField txtCiPersona;
+    private javax.swing.JTextField txtDireccionRest;
+    private javax.swing.JTextField txtHorarioRest;
+    private javax.swing.JTextField txtMailPersona;
+    private javax.swing.JTextField txtNombrePersona;
+    private javax.swing.JTextField txtNombreRest;
+    private javax.swing.JTextField txtPremioSorteo;
+    private javax.swing.JTextArea txtReseniaPersona;
+    private javax.swing.JTextField txtTelPersona;
+    private javax.swing.JTextField txtTipoComidaRest;
     private javax.swing.JPanel verEvaluacion;
     private javax.swing.JPanel verSorteo;
     // End of variables declaration//GEN-END:variables
@@ -1676,13 +1682,13 @@ public class VentanaInicio extends javax.swing.JFrame {
     }
 
     private void iniEvaluacion() {
-        jTextField7.setText("");
-        jTextField8.setText("");
+        txtNombrePersona.setText("");
+        txtTelPersona.setText("");
         jLabel13.setVisible(false);
-        jTextField9.setText("");
+        txtMailPersona.setText("");
         jLabel12.setVisible(false);
-        jTextArea1.setText("");
-        jTextField10.setText("");
+        txtReseniaPersona.setText("");
+        txtCiPersona.setText("");
         jLabel14.setVisible(false);
     }
 
@@ -1690,55 +1696,55 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         switch (nroBoton) {
             case 0:
-                jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 1:
-                jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 2:
-                jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 3:
-                jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 4:
-                jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                s1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 5:
-                jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                s5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
                 break;
         }
     }
 
     private void inicializarRestaurante() {
-        jTextField1.setText(restaurante.getNombre());
-        jTextField2.setText(restaurante.getDireccion());
-        jTextField3.setText(restaurante.getHorario());
-        jTextField4.setText(restaurante.getTipoComida());
+        txtNombreRest.setText(restaurante.getNombre());
+        txtDireccionRest.setText(restaurante.getDireccion());
+        txtHorarioRest.setText(restaurante.getHorario());
+        txtTipoComidaRest.setText(restaurante.getTipoComida());
     }
 
     private void inicializarEvaluaciones() {
@@ -1763,46 +1769,46 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         switch (cantidad) {
             case 0:
-                jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 1:
-                jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 2:
-                jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 3:
-                jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
-                jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 4:
-                jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
+                e1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e0.png")));
                 break;
             case 5:
-                jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
-                jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
+                e5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/e1.png")));
                 break;
         }
     }

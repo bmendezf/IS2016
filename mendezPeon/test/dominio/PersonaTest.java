@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dominio;
 
 import org.junit.After;
@@ -12,14 +7,11 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author bruno
- */
+
 public class PersonaTest {
     
-    public PersonaTest() {
-    }
+
+    private Persona instance;
     
     @BeforeClass
     public static void setUpClass() {
@@ -31,119 +23,14 @@ public class PersonaTest {
     
     @Before
     public void setUp() {
+        instance = new Persona();
+        instance.inicializarPersona();
     }
     
     @After
     public void tearDown() {
     }
 
-    /**
-     * Test of getNombre method, of class Persona.
-     */
-    @Test
-    public void testGetNombre() {
-        System.out.println("getNombre");
-        Persona instance = new Persona();
-        String expResult = "";
-        String result = instance.getNombre();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setNombre method, of class Persona.
-     */
-    @Test
-    public void testSetNombre() {
-        System.out.println("setNombre");
-        String nombre = "";
-        Persona instance = new Persona();
-        instance.setNombre(nombre);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getTelefono method, of class Persona.
-     */
-    @Test
-    public void testGetTelefono() {
-        System.out.println("getTelefono");
-        Persona instance = new Persona();
-        int expResult = 0;
-        int result = instance.getTelefono();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getCi method, of class Persona.
-     */
-    @Test
-    public void testGetCi() {
-        System.out.println("getCi");
-        Persona instance = new Persona();
-        int expResult = 0;
-        int result = instance.getCi();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setCi method, of class Persona.
-     */
-    @Test
-    public void testSetCi() {
-        System.out.println("setCi");
-        int ci = 0;
-        Persona instance = new Persona();
-        instance.setCi(ci);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setTelefono method, of class Persona.
-     */
-    @Test
-    public void testSetTelefono() {
-        System.out.println("setTelefono");
-        int telefono = 0;
-        Persona instance = new Persona();
-        instance.setTelefono(telefono);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getMail method, of class Persona.
-     */
-    @Test
-    public void testGetMail() {
-        System.out.println("getMail");
-        Persona instance = new Persona();
-        String expResult = "";
-        String result = instance.getMail();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setMail method, of class Persona.
-     */
-    @Test
-    public void testSetMail() {
-        System.out.println("setMail");
-        String mail = "";
-        Persona instance = new Persona();
-        instance.setMail(mail);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
 
     /**
      * Test of verificarCorreo method, of class Persona.
@@ -243,26 +130,13 @@ public class PersonaTest {
     
     
     
-    /**
-     * Test of verificarCI method, of class Persona.
-     */
-    @Test
-    public void testVerificarCI() {
-        System.out.println("verificarCI");
-        String CI = "";
-        boolean expResult = false;
-        boolean result = Persona.verificarCI(CI);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
+   
     
     @Test
     public void testVerificarCIVacio() {
         System.out.println("VerificarCIVacio");
         String ci = "";
-        boolean resultado = Persona.validarTelefono(ci);
+        boolean resultado = Persona.verificarCI(ci);
         assertFalse(resultado);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -283,7 +157,7 @@ public class PersonaTest {
         System.out.println("validarTelefonoLargo7");
         String tel = "9123123";
         boolean resultado = Persona.validarTelefono(tel);
-        assertTrue(resultado);
+        assertFalse(resultado);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -292,7 +166,7 @@ public class PersonaTest {
     public void testValidarCIMenor() {
         System.out.println("validarCIMenor");
         String ci = "123456";
-        boolean resultado = Persona.validarTelefono(ci);
+        boolean resultado = Persona.verificarCI(ci);
         assertFalse(resultado);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -302,7 +176,7 @@ public class PersonaTest {
     public void testValidarCIMayor() {
         System.out.println("validarCIMayor");
         String ci = "123456789";
-        boolean resultado = Persona.validarTelefono(ci);
+        boolean resultado = Persona.verificarCI(ci);
         assertFalse(resultado);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -314,12 +188,51 @@ public class PersonaTest {
      * Test of inicializarPersona method, of class Persona.
      */
     @Test
-    public void testInicializarPersona() {
-        System.out.println("inicializarPersona");
-        Persona instance = new Persona();
-        instance.inicializarPersona();
+    public void testInicializarPersonaNombre() {
+        System.out.println("inicializarPersonaNombre");
+        
+        String resultadoEsperado = "Ana";
+        String resultadoObtenido = instance.getNombre();
+        assertEquals(resultadoEsperado,resultadoObtenido);
+        
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testInicializarPersonaTelefono() {
+        System.out.println("inicializarPersonaTelefono");
+        
+        int resultadoEsperado = 123456789;
+        int resultadoObtenido = instance.getTelefono();
+        assertEquals(resultadoEsperado,resultadoObtenido);
+        
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testInicializarPersonaMail() {
+        System.out.println("inicializarPersonaMail");
+        
+        String resultadoEsperado = "prueba@gmail.com";
+        String resultadoObtenido = instance.getMail();
+        assertEquals(resultadoEsperado,resultadoObtenido);
+        
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testInicializarPersonaCI() {
+        System.out.println("inicializarPersonaCI");
+        
+        int resultadoEsperado = 12345672;
+        int resultadoObtenido = instance.getCi();
+        assertEquals(resultadoEsperado,resultadoObtenido);
+        
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
     }
     
 }

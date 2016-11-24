@@ -8,7 +8,15 @@
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
 <project name="mendezPeon" default="default" basedir=".">
-    <description>Builds, tests, and runs the project mendezPeon.</description>
+	<target name = "-post-jar"> 
+		<jar jarfile = "${dist.jar}" update = "true">
+			<zipfileset src = "C:\Users\bruno\Desktop\javamail-1.4.7\mail.jar" excludes =  "META-INF/*"/>
+			<manifest>
+				<attribute name = "Main-Class" value = "inicio.Inicio"/>
+			</manifest>
+		</jar>
+	</target>
+    <description>Builds, tests, and runs the project mendezPeon. </description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
